@@ -7,6 +7,10 @@
         <!--<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />-->
     </definition>
 
+    <definition name="test" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/pages/test.jsp" />
+    </definition>
+
     <definition name="home" extends="baseLayout">
         <put-attribute name="body" value="/WEB-INF/pages/index.jsp" />
     </definition>

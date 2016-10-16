@@ -33,7 +33,6 @@ buildNumber.properties
 
 # User-specific stuff:
 .idea/
-
 ## File-based project format:
 *.iws
 *.iml

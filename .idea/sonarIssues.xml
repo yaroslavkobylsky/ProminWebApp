@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../promin/pom.xml">
           <value>
             <set />
@@ -58,6 +63,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/AppConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/AppInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/Configuration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/JsonViewResolver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/index.jsp">
           <value>
             <set />
@@ -94,6 +119,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/viewAll.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/test.jsp">
           <value>
             <set />
           </value>
