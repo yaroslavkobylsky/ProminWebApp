@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/modules.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/pom.xml">
           <value>
             <set />
@@ -214,6 +219,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/resources/js/app.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/pom.xml">
           <value>
             <set />
           </value>

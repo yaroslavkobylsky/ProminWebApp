@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>controller</artifactId>
     <packaging>war</packaging>
-    <name>controller Maven Webapp</name>
+    <name>controller</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -54,6 +54,12 @@
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>test2</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

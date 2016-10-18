@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="controller" />
+        <module name="model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="controller" target="1.5" />
+      <module name="model" target="1.5" />
       <module name="promin" target="1.5" />
       <module name="test2" target="1.5" />
     </bytecodeTargetLevel>
