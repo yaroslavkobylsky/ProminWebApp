@@ -263,6 +263,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -25,6 +25,7 @@
         <module name="controller" />
         <module name="dao" />
         <module name="model" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="dao" target="1.5" />
       <module name="model" target="1.5" />
       <module name="promin" target="1.5" />
+      <module name="service" target="1.5" />
       <module name="test2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
