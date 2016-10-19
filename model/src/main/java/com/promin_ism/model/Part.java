@@ -1,4 +1,4 @@
-package com.promin_ism_model;
+package com.promin_ism.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

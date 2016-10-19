@@ -1,12 +1,12 @@
-package com.promin_ism_model;
+package com.promin_ism.model;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ProductionMethod")
-public class ProductionMethod {
+@Table(name="MaterialType")
+public class MaterilalType {
     @Id
-    @SequenceGenerator(name = "sequence", sequenceName = "SEQ_ProductionMethod_ID", allocationSize = 1, initialValue = 1)
+    @SequenceGenerator(name = "sequence", sequenceName = "SEQ_MaterialType_ID", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")
     private Long id;
 
