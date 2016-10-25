@@ -13,9 +13,10 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="use_sql_comments">true</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">validate</property>
         <property name="hibernate.current_session_context_class">thread</property>
 
         <!--<mapping class=""/>-->
+        <mapping class="com.promin_ism.model.User"/>
     </session-factory>
 </hibernate-configuration>
