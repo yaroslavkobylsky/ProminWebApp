@@ -11,6 +11,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import java.util.List;
+
 public class HibernateUtil {
     private static final Logger LOGGER =  LogManager.getLogger(HibernateUtil.class);
     private static final SessionFactory sessionFactory = buildSessionFactory();
@@ -32,7 +34,7 @@ public class HibernateUtil {
         getSessionFactory().close();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DatabaseException {
         LOGGER.debug("trying to init session factory");
         HibernateUtil.buildSessionFactory();
         LOGGER.debug("int session factory done");
@@ -42,10 +44,20 @@ public class HibernateUtil {
         user.setLogin("test Login");
         user.setPassword("Test Password");
         user.setUserType(User.USER_TYPE_EDITOR);
-        try {
-            userDao.create(user);
-        } catch (DatabaseException e) {
-            LOGGER.debug(e.getMessage());
+        Long id = null;
+        id = userDao.create(user);
+        User newUser = null;
+        newUser = userDao.read(id);
+        LOGGER.debug(newUser.toString());
+        newUser.setName("updated name");
+        userDao.update(newUser);
+
+        newUser = userDao.read(id);
+        LOGGER.debug(newUser.toString());
+
+        List<User> users = userDao.findAll();
+        for (User user1 : users){
+            LOGGER.debug(user.toString());
         }
 
         HibernateUtil.shutdown();

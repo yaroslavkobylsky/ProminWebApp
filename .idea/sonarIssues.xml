@@ -228,12 +228,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/DatabaseException.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/GenericDaoCRUD.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialTypeDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/PartDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/UserDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/PartDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java">
           <value>
             <set />
           </value>
@@ -249,6 +299,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/resources/log4j.properties">
           <value>
             <set />
           </value>

@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="MaterialType")
-public class MaterilalType {
+public class MaterialType {
     @Id
     @SequenceGenerator(name = "sequence", sequenceName = "SEQ_MaterialType_ID", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")

@@ -35,7 +35,7 @@ public class Material {
     private Date date;
 
     @ManyToOne
-    private MaterilalType materilalType;
+    private MaterialType materilalType;
 
     @ManyToOne
     private User user;
@@ -183,11 +183,11 @@ public class Material {
         this.user = user;
     }
 
-    public MaterilalType getMaterilalType() {
+    public MaterialType getMaterilalType() {
         return materilalType;
     }
 
-    public void setMaterilalType(MaterilalType materilalType) {
+    public void setMaterilalType(MaterialType materilalType) {
         this.materilalType = materilalType;
     }
 }
