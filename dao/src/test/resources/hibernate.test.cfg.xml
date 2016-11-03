@@ -6,7 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:8082/postgres?currentSchema=promin_ism</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:8082/testDB?currentSchema=promin_ism_test</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
@@ -22,6 +22,5 @@
         <mapping class="com.promin_ism.model.Material"/>
         <mapping class="com.promin_ism.model.ProductionMethod"/>
         <mapping class="com.promin_ism.model.Part"/>
-
     </session-factory>
 </hibernate-configuration>

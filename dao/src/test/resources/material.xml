@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+
+    <material id="5"
+              name="name5"
+              gost="gost5"
+              dimensions="dimensions5"
+              sort="sort5"
+    />
+
+    <material id="0"
+              name="name0"
+              gost="gost0"
+              dimensions="dimensions0"
+              sort="sort0"
+    />
+
+</dataset>

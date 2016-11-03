@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d0d3b7-ddef-4706-be17-e01de0fbd246" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterilalType.java" afterPath="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterialType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialTypeDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialTypeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/PartDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/PartDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/pom.xml" afterPath="$PROJECT_DIR$/dao/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/PartDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/PartDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/util/HibernateUtil.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/util/HibernateUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java" afterPath="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java" />
     </list>
     <ignored path="test2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,30 +43,7 @@
     <favorites_list name="test2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CommonDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaterialTypeDaoImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41034484">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,26 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/NewMaterialController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/materials/new.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/viewAll.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/NewPartController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewAllPartsController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/NewStandardPartController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewAllStandardPartsController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/views/header.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/new.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/viewAll.jsp" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/views/tiles.xml" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/Configuration.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/JsonViewResolver.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/AppInitializer.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/test.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/TestController.java" />
         <option value="$PROJECT_DIR$/controller/src/main/resources/log4j.properties" />
@@ -122,14 +79,9 @@
         <option value="$PROJECT_DIR$/controller/pom.xml" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/springmvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/DatabaseException.java" />
-        <option value="$PROJECT_DIR$/dao/pom.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/util/HibernateUtil.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/GenericDaoCRUD.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java" />
@@ -140,6 +92,31 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialTypeDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/dao/pom.xml" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/db.config.properties" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/Users.xml" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateUtilTest.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/hibernate.test.cfg.xml" />
+        <option value="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/User.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/user.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/GenericDaoCRUD.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateDbUnitTestCase.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/UserDBUnitTestCase.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/resources/material.xml" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/MaterialDBUnitTestCase.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -198,8 +175,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,10 +213,6 @@
               <option name="myItemId" value="ProminWebApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,7 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,17 +302,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,7 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -333,10 +331,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -348,7 +342,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,7 +358,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,7 +372,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -394,41 +388,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -446,7 +406,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,7 +420,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -482,7 +460,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -494,13 +472,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,13 +506,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yar\IdeaProjects\test2\dao\src\test\java\com\promin_ism\dao\integration" />
+      <recent name="C:\Users\Yar\IdeaProjects\test2\dao\src\test\resources" />
       <recent name="C:\Users\Yar\IdeaProjects\test2\dao\src\main\resources" />
       <recent name="C:\Users\Yar\IdeaProjects\test2\src\main\resources" />
       <recent name="C:\Users\Yar\IdeaProjects\test2\service\src\main\java\com\promin_ism\service\impl" />
-      <recent name="C:\Users\Yar\IdeaProjects\test2\service\src\main\java\com\promin_ism\service" />
-      <recent name="C:\Users\Yar\IdeaProjects\test2\dao\src\main\java\com\promin_ism\dao\impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.promin_ism.dao.integration" />
       <recent name="com.promin_ism.dao.util" />
       <recent name="com.promin_ism_model" />
     </key>
@@ -542,25 +525,135 @@
       <recent name="C:\Users\Yar\IdeaProjects\test2\controller\src\main\webapp\WEB-INF\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HibernateUtil">
-    <configuration default="false" name="HibernateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MaterialDBUnitTestCase.testFindAllMaterials">
+    <configuration default="false" name="UserDBUnitTestCase.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.promin_ism.dao.util.*" />
+          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.util.HibernateUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="dao" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.UserDBUnitTestCase" />
+      <option name="METHOD_NAME" value="findAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dao" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserDBUnitTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dao" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.UserDBUnitTestCase" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaterialDBUnitTestCase.testReadMaterial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dao" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.MaterialDBUnitTestCase" />
+      <option name="METHOD_NAME" value="testReadMaterial" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaterialDBUnitTestCase.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dao" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.MaterialDBUnitTestCase" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaterialDBUnitTestCase.testFindAllMaterials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dao" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.MaterialDBUnitTestCase" />
+      <option name="METHOD_NAME" value="testFindAllMaterials" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1070,13 +1163,21 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TomCat" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HibernateUtil" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testReadMaterial" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testUpdate" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testFindAllMaterials" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.HibernateUtil" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testFindAllMaterials" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testUpdate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testReadMaterial" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -1115,11 +1216,48 @@
       <workItem from="1477420334231" duration="3527000" />
       <workItem from="1477503244609" duration="4259000" />
       <workItem from="1477591018961" duration="1122000" />
+      <workItem from="1477593975024" duration="693000" />
+      <workItem from="1477830097859" duration="11418000" />
+      <workItem from="1477942414936" duration="3011000" />
+      <workItem from="1478102648405" duration="7217000" />
+      <workItem from="1478199962470" duration="1133000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MaterialDBUnitTestCase_testFindAllMaterials - 2016.11.02 at 22h 06m 23s.xml">
+      <configuration name="MaterialDBUnitTestCase.testFindAllMaterials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaterialDBUnitTestCase_testReadMaterial - 2016.11.02 at 22h 00m 23s.xml">
+      <configuration name="MaterialDBUnitTestCase.testReadMaterial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaterialDBUnitTestCase_testUpdate - 2016.11.02 at 22h 03m 22s.xml">
+      <configuration name="MaterialDBUnitTestCase.testUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase - 2016.11.02 at 20h 38m 01s.xml">
+      <configuration name="UserDBUnitTestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase - 2016.11.02 at 20h 39m 20s.xml">
+      <configuration name="UserDBUnitTestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase - 2016.11.02 at 20h 50m 07s.xml">
+      <configuration name="UserDBUnitTestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase - 2016.11.02 at 20h 51m 22s.xml">
+      <configuration name="UserDBUnitTestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase_findAllUsers - 2016.11.02 at 20h 43m 15s.xml">
+      <configuration name="UserDBUnitTestCase.findAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase_findAllUsers - 2016.11.02 at 20h 53m 37s.xml">
+      <configuration name="UserDBUnitTestCase.findAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDBUnitTestCase_findAllUsers - 2016.11.02 at 20h 54m 24s.xml">
+      <configuration name="UserDBUnitTestCase.findAllUsers" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74099000" />
+    <option name="totallyTimeSpent" value="97571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1132,7 +1270,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1141,29 +1279,29 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1492205" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49554566" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5044543" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6069042" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42650333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1186,69 +1324,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.1.RELEASE/spring-webmvc-4.2.1.RELEASE.jar!/org/springframework/web/servlet/view/AbstractUrlBasedView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28232503">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.1.RELEASE/spring-webmvc-4.2.1.RELEASE.jar!/org/springframework/web/servlet/view/tiles3/TilesViewResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12099644">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.1.RELEASE/spring-webmvc-4.2.1.RELEASE.jar!/org/springframework/web/servlet/view/tiles3/TilesView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12099644">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64491653">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.03846">
-          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/views/layout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/views/tiles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36115327">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4684271">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31228474">
@@ -1298,87 +1373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07816092">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07816092">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56465006">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16242038">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1412,83 +1410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89774436">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3464674">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36956522">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30027175">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/util/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9048913">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/PartDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.254023">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1496,50 +1421,259 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.254023">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/DatabaseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1367816">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7330097">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/GenericDaoCRUD.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/util/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17586207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.8416149">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialDao.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5543478">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23448277">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.05279503">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5171103">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterialType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5471264">
+        <state vertical-scroll-proportion="0.7659208">
           <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46815833">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31211752">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39425287">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/dbunit/dbunit/2.4.9/dbunit-2.4.9-sources.jar!/org/dbunit/util/fileloader/AbstractDataFileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3770115">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/resources/hibernate.test.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7417103">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31264368">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/GenericDaoCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16427104">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateDbUnitTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5471264">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5275862">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/UserDBUnitTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09770115">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/resources/user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3021327">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/MaterialDBUnitTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7816092">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/resources/material.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3222749">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/MaterialTypeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1954023">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.09770115">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/PartDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09770115">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/ProductionMethodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09770115">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1554,26 +1688,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/DatabaseException.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1367816">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.1954023">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.1954023">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/MaterialTypeDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41034484">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5471264">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1954023">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

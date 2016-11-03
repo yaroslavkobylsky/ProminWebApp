@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import java.util.List;
 
 public class MaterialDaoImpl extends GenericDaoCRUD<Material> implements MaterialDao {
-    protected MaterialDaoImpl(SessionFactory sessionFactory) {
+    public MaterialDaoImpl(SessionFactory sessionFactory) {
         super(sessionFactory);
     }
 

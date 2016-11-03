@@ -308,7 +308,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateDbUnitTestCase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/HibernateUtilTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/MaterialDBUnitTestCase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/java/com/promin_ism/dao/integration/UserDBUnitTestCase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/Users.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/db.config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/hibernate.test.cfg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/log4j2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/material.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/test/resources/user.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/model/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/User.java">
           <value>
             <set />
           </value>
@@ -348,7 +403,52 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialTypeService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/ProductionMethodService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/MaterialTypeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/UserServiceImpl.java">
           <value>
             <set />
           </value>

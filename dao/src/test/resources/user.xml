@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+
+    <users id="5"
+           login="login5"
+           name="name5"
+           password="password5"
+    />
+
+    <users id="0"
+           login="login"
+           name="name"
+           password="password"
+    />
+
+</dataset>
