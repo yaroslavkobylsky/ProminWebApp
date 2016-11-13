@@ -2,13 +2,24 @@
 <html>
 <head>
     <title>${message}</title>
-
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <div>
         <button id="test_ajax">test AJAX request</button>
         <h5 id="ajax_answer"></h5>
     </div>
+
+    </br>
+
+    <div>
+        <h5 class="test_jquery"></h5>
+    </div>
+
 
     <script>
         window.onload = function () {
@@ -32,6 +43,14 @@
                 }
             }
         }
+    </script>
+    <script>
+        $(function() {
+            console.log( "jquery ready!" );
+            $(".test_jquery").text("hello!");
+            /*test adding child*/
+            $(".test_jquery").append(" appended text");
+        });
     </script>
 </body>
 </html>

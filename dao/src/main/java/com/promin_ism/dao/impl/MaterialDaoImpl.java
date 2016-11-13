@@ -5,12 +5,15 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.MaterialDao;
 import com.promin_ism.model.Material;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class MaterialDaoImpl extends GenericDaoCRUD<Material> implements MaterialDao {
-    public MaterialDaoImpl(SessionFactory sessionFactory) {
-        super(sessionFactory);
+
+    public MaterialDaoImpl() {
     }
 
     public Material read(Long id) throws DatabaseException {

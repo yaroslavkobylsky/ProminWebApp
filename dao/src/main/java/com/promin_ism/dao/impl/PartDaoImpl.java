@@ -5,12 +5,15 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.PartDao;
 import com.promin_ism.model.Part;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class PartDaoImpl extends GenericDaoCRUD<Part> implements PartDao {
-    protected PartDaoImpl(SessionFactory sessionFactory) {
-        super(sessionFactory);
+
+    public PartDaoImpl() {
     }
 
     public Part read(Long id) throws DatabaseException {

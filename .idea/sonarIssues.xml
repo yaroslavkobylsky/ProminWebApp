@@ -88,7 +88,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/resources/META-INF/persistence.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/resources/log4j.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/db.xml">
           <value>
             <set />
           </value>
@@ -134,6 +144,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/test.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/persistence.xml">
           <value>
             <set />
           </value>
@@ -218,6 +233,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/resources/db/db.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/resources/db/db.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/resources/js/app.js">
           <value>
             <set />
@@ -229,6 +254,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/DaoFactory.java">
           <value>
             <set />
           </value>
@@ -264,6 +294,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/UserDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/DaoFactoryImpl.java">
           <value>
             <set />
           </value>
@@ -359,6 +394,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/model/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterialType.java">
           <value>
             <set />
           </value>

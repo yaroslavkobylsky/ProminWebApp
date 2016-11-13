@@ -38,7 +38,8 @@ public class HibernateUtil {
         LOGGER.debug("trying to init session factory");
         HibernateUtil.buildSessionFactory();
         LOGGER.debug("int session factory done");
-        UserDao userDao = new UserDaoImpl(HibernateUtil.getSessionFactory());
+        /*UserDao userDao = new UserDaoImpl(HibernateUtil.getSessionFactory());*/
+        UserDao userDao = new UserDaoImpl();
         User user = new User();
         user.setName("Test user");
         user.setLogin("test Login");

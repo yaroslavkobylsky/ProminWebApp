@@ -9,6 +9,7 @@ import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.ReplacementDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.InputStream;
 import java.util.List;
@@ -21,7 +22,9 @@ public class UserDBUnitTestCase extends HibernateDbUnitTestCase {
     private static final Long USER5_ID = new Long(5);
     private static final int USERS_NUMBER = 2;
 
-    private UserDao userDao = new UserDaoImpl(HibernateUtilTest.getSessionFactory());
+
+    /*private UserDao userDao = new UserDaoImpl(HibernateUtilTest.getSessionFactory());*/
+    private UserDao userDao = new UserDaoImpl();
 
     protected IDataSet getDataSet() throws Exception {
         InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(USER_TEST_DATA_XML);
@@ -38,6 +41,10 @@ public class UserDBUnitTestCase extends HibernateDbUnitTestCase {
 
     @Test
     public void testUpdateUser() throws DatabaseException {
+        if (userDao == null){
+            LOGGER.debug("userDao is null");
+            return;
+        }
         User user5 = userDao.read(new Long(USER5_ID));
         user5.setName(USER5_NAME_UPDATE);
         userDao.update(user5);

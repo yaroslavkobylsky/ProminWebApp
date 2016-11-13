@@ -5,10 +5,16 @@
        http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
     <context:component-scan base-package="com.promin_ism.controller" />
+    <context:component-scan base-package="com.promin_ism.model"/>
+    <context:component-scan base-package="com.promin_ism.dao"/>
+    <context:component-scan base-package="com.promin_ism.service"/>
 
     <mvc:annotation-driven/>
     <mvc:resources mapping="/WEB-INF/pages" location="/WEB-INF/pages" />
 
+    <import resource="db.xml" />
+
+    <!--view resolvers-->
     <bean id="viewResolver"  class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
         <property name="order" value="1"/>
     </bean>

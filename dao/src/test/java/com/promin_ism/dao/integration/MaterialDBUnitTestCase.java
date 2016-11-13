@@ -20,7 +20,8 @@ public class MaterialDBUnitTestCase  extends HibernateDbUnitTestCase {
     private static String MATERIAL5_NAME_UPDATED = "name5_updated";
     private static Long MATERIAL5_ID = new Long(5);
     private static int MATERIALS_SIZE = 2;
-    private MaterialDao materialDao = new MaterialDaoImpl(HibernateUtilTest.getSessionFactory());
+    private MaterialDao materialDao = new MaterialDaoImpl();
+    /*private MaterialDao materialDao = new MaterialDaoImpl(HibernateUtilTest.getSessionFactory());*/
 
     protected IDataSet getDataSet() throws Exception {
         InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(MATERIAL_TEST_DATA_XML);

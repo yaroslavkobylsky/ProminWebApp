@@ -1,5 +1,7 @@
 package com.promin_ism.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.util.Date;
 
