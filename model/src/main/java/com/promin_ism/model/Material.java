@@ -30,9 +30,6 @@ public class Material {
     @Column(name = "sort")
     private String sort;
 
-    @Column(name = "type")
-    private Long type;
-
     @Column(name = "lastDate")
     private Date date;
 
@@ -44,8 +41,9 @@ public class Material {
 
     private String fullName;
 
-    private void generateFullName(){
+    private String generateFullName(){
         this.fullName = name + " " + dimensions + " " + gost + "/" +  sort;
+        return fullName;
     }
 
     public Material(String name, String dimensions, String gost, String sort) {
@@ -121,14 +119,6 @@ public class Material {
                 sort + ", lastDate=" + date.toLocaleString() + " ]";
     }
 
-    public Long getType() {
-        return type;
-    }
-
-    public void setType(Long type) {
-        this.type = type;
-    }
-
     public Long getId() {
         return id;
     }
@@ -192,4 +182,9 @@ public class Material {
     public void setMaterilalType(MaterialType materilalType) {
         this.materilalType = materilalType;
     }
+
+    public String getFullName() {
+        return generateFullName();
+    }
+
 }

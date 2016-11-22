@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
+
+
     <definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
-        <!--<put-attribute name="title" value="Spring 3 MVC & Apache Tiles 2" />-->
-        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
-        <!--<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />-->
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp"/>
+        <put-attribute name="title" value="Page title"/>
+        <put-list-attribute name="javascripts">
+            <add-attribute value="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"/>
+            <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"/>
+        </put-list-attribute>
+        <put-list-attribute name="stylesheets">
+            <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+            <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+        </put-list-attribute>
     </definition>
+
+
+
 
     <definition name="test" extends="baseLayout">
         <put-attribute name="body" value="/WEB-INF/pages/test.jsp" />
@@ -16,7 +28,11 @@
     </definition>
 
     <definition name="materialNew" extends="baseLayout">
+        <put-attribute name="title" value="Add new material" />
         <put-attribute name="body" value="/WEB-INF/pages/materials/new.jsp" />
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/newMaterial.js"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="materialViewAll" extends="baseLayout">
