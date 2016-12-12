@@ -108,6 +108,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newPart.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newPartAddProductionMethod.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/errorPage.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/index.jsp">
           <value>
             <set />
@@ -414,6 +429,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterialType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Part.java">
           <value>
             <set />
           </value>

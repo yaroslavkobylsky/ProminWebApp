@@ -3,6 +3,7 @@ package com.promin_ism.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "Part")
@@ -30,8 +31,8 @@ public class Part {
     @Column(name = "lastDate")
     private Date lastDate;
 
-    @ManyToOne
-    private ProductionMethod productionMethod;
+    @ManyToMany
+    private List<ProductionMethod> productionMethods;
 
     @ManyToOne
     private User user;
@@ -182,11 +183,11 @@ public class Part {
         isPurchased = purchased;
     }
 
-    public ProductionMethod getProductionMethod() {
-        return productionMethod;
+    public List<ProductionMethod> getProductionMethod() {
+        return productionMethods;
     }
 
-    public void setProductionMethod(ProductionMethod productionMethod) {
-        this.productionMethod = productionMethod;
+    public void setProductionMethod(List<ProductionMethod> productionMethods) {
+        this.productionMethods = productionMethods;
     }
 }

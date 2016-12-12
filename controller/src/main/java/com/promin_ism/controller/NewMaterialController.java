@@ -31,24 +31,23 @@ public class NewMaterialController {
 
     @RequestMapping(value = "/materials/new", method = RequestMethod.GET)
     public ModelAndView newMaterial(){
-        String message = "HELLO!!!";
-        return new ModelAndView("materialNew", "message", message);
+        return new ModelAndView("materialNew");
     }
 
     @RequestMapping(value = "/materials/new", method = RequestMethod.POST)
     public String saveMaterial(
-            /*@ModelAttribute("materialName") */String materialName,
-            /*@ModelAttribute("materialDimensions")*/ String materialDimensions,
-            /*@ModelAttribute("materialGOST")*/ String materialGOST,
-            /*@ModelAttribute("materialSort") */String materialSort,
-            /*@ModelAttribute("materialType") */Integer materialType){
+            String materialName,
+            String materialDimensions,
+            String materialGOST,
+            String materialSort,
+            Integer materialType){
         LOGGER.debug("new material post method");
         Material material = new Material();
         LOGGER.debug("material name: " + materialName);
-        material.setName(materialName);
-        material.setDimensions(materialDimensions);
-        material.setGost(materialGOST);
-        material.setSort(materialSort);
+        material.setName(materialName.trim());
+        material.setDimensions(materialDimensions.trim());
+        material.setGost(materialGOST.trim());
+        material.setSort(materialSort.trim());
         material.setDate(new Date());
         try {
             if (materialType != null && !materialType.equals(new Integer(-1))){

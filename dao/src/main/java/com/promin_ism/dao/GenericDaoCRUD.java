@@ -1,6 +1,5 @@
 package com.promin_ism.dao;
 
-import com.promin_ism.dao.util.HibernateUtil;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -14,13 +13,6 @@ public class GenericDaoCRUD <T> {
 
     @Autowired
     private SessionFactory sessionFactory;
-
-    public GenericDaoCRUD() {
-    }
-
-    /*protected SessionFactory getSessionFactory() {
-        return sessionFactory;
-    }*/
 
     protected T read(Long id, Class<T> tClass) throws DatabaseException {
         try {
@@ -79,5 +71,9 @@ public class GenericDaoCRUD <T> {
             LOGGER.error(e.getMessage());
             throw new DatabaseException(e.getMessage());
         }
+    }
+
+    protected SessionFactory getSessionFactory() {
+        return sessionFactory;
     }
 }

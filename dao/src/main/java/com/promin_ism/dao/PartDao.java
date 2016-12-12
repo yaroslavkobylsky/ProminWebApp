@@ -10,4 +10,5 @@ public interface PartDao {
     Long create(Part part) throws DatabaseException;
     void delete(Part part) throws DatabaseException;
     List<Part> findAll() throws DatabaseException;
+    boolean isNameUnique(String name) throws DatabaseException;
 }

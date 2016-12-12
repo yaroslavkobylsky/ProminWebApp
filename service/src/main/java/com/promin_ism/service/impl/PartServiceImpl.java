@@ -36,4 +36,8 @@ public class PartServiceImpl implements PartService {
     public List<Part> findAll() throws DatabaseException {
         return partDao.findAll();
     }
+
+    public boolean isNameUnique(String name) throws DatabaseException {
+        return partDao.isNameUnique(name);
+    }
 }
