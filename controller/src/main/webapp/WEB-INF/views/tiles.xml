@@ -13,6 +13,7 @@
         <put-list-attribute name="stylesheets">
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+            <add-attribute value="/css/common.css"/>
         </put-list-attribute>
     </definition>
 
