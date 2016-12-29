@@ -15,7 +15,7 @@
 
     <form action="/parts/new" method="post" id="addPartForm">
 
-        <div class="row">
+        <div class="row" style="margin: 5px">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="form-group">
@@ -68,7 +68,7 @@
             <div class="col-md-3"></div>
         </div>
 
-        <div class="row" style="margin: 5px">
+        <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="form-group">

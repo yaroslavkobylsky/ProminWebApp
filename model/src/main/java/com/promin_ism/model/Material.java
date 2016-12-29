@@ -8,10 +8,6 @@ import java.util.Date;
 @Entity
 @Table(name = "Material")
 public class Material {
-    /*public static Long TYPE_ROUND_PIPE = new Long(1);
-    public static Long TYPE_RECTANGULAR_PIPE = new Long(2);
-    public static Long TYPE_CORNER = new Long(3);
-    public static Long TYPE_SHEET = new Long(4);*/
 
     @Id
     @SequenceGenerator(name = "sequence", sequenceName = "SEQ_Material_ID", allocationSize = 1, initialValue = 1)

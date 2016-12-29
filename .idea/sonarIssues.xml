@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/HotKeyTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/IndexController.java">
           <value>
             <set />
@@ -119,6 +124,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newPartAddProductionMethod.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newStandPart.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newStandardPart.js">
           <value>
             <set />
           </value>
@@ -323,6 +338,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/StandardPartDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/UserDao.java">
           <value>
             <set />
@@ -349,6 +369,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/ProductionMethodDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/StandardPartDaoImpl.java">
           <value>
             <set />
           </value>
@@ -443,6 +468,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/StandardPart.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/User.java">
           <value>
             <set />
@@ -503,6 +533,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/StandardPartService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java">
           <value>
             <set />
@@ -524,6 +559,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/ProductionMethodServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/StandardPartServiceImpl.java">
           <value>
             <set />
           </value>

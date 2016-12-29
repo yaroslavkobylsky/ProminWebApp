@@ -2,21 +2,22 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 
-
     <definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
         <put-attribute name="header" value="/WEB-INF/views/header.jsp"/>
         <put-attribute name="title" value="Page title"/>
         <put-list-attribute name="javascripts">
             <add-attribute value="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"/>
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"/>
+            <add-attribute value="/js/jAlert.js"/>
+            <add-attribute value="/js/jAlert-functions.js"/>
         </put-list-attribute>
         <put-list-attribute name="stylesheets">
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
             <add-attribute value="/css/common.css"/>
+            <add-attribute value="/css/jAlert.css"/>
         </put-list-attribute>
     </definition>
-
 
 
 
@@ -54,11 +55,16 @@
     </definition>
 
     <definition name="standardPartsViewAll" extends="baseLayout">
+        <put-attribute name="title" value="View all standard parts"/>
         <put-attribute name="body" value="/WEB-INF/pages/standardParts/viewAll.jsp" />
     </definition>
 
     <definition name="standardPartsNew" extends="baseLayout">
+        <put-attribute name="title" value="Add new standard part" />
         <put-attribute name="body" value="/WEB-INF/pages/standardParts/new.jsp" />
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/newStandPart.js"/>
+        </put-list-attribute>
     </definition>
 
 </tiles-definitions>

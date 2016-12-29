@@ -30,13 +30,13 @@ public class NewPartController {
     private static final String METHOD = "method";
 
     @Autowired
-    PartService partService;
+    private PartService partService;
 
     @Autowired
-    MaterialService materialService;
+    private MaterialService materialService;
 
     @Autowired
-    ProductionMethodService productionMethodService;
+    private ProductionMethodService productionMethodService;
 
     @RequestMapping(value = "/parts/new", method = RequestMethod.GET)
     public ModelAndView newPart(){
