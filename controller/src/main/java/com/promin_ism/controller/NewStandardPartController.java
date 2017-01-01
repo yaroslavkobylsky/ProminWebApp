@@ -29,7 +29,7 @@ public class NewStandardPartController {
     }
 
     @RequestMapping(value = "/standardParts/new", method = RequestMethod.POST)
-    public ModelAndView saveStandardPart(String standardPartName,
+    public String saveStandardPart(String standardPartName,
                                          String gost,
                                          BigDecimal weight,
                                          String additionalInfo) {
@@ -47,7 +47,7 @@ public class NewStandardPartController {
             LOGGER.error(standardPart);
         }
 
-        return new ModelAndView("standardPartsViewAll");
+        return "redirect:viewAll";
     }
 
 
