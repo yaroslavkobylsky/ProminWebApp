@@ -22,32 +22,33 @@
 
 
     <definition name="test" extends="baseLayout">
-        <put-attribute name="body" value="/WEB-INF/pages/test.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/test.jsp"/>
     </definition>
 
     <definition name="home" extends="baseLayout">
-        <put-attribute name="body" value="/WEB-INF/pages/index.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/index.jsp"/>
     </definition>
 
     <definition name="materialNew" extends="baseLayout">
-        <put-attribute name="title" value="Add new material" />
-        <put-attribute name="body" value="/WEB-INF/pages/materials/new.jsp" />
+        <put-attribute name="title" value="Add new material"/>
+        <put-attribute name="body" value="/WEB-INF/pages/materials/new.jsp"/>
         <put-list-attribute name="javascripts" inherit="true">
             <add-attribute value="/js/newMaterial.js"/>
         </put-list-attribute>
     </definition>
 
     <definition name="materialViewAll" extends="baseLayout">
-        <put-attribute name="body" value="/WEB-INF/pages/materials/viewAll.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/materials/viewAll.jsp"/>
     </definition>
 
     <definition name="partsViewAll" extends="baseLayout">
+        <put-attribute name="title" value="View all parts"/>
         <put-attribute name="body" value="/WEB-INF/pages/parts/viewAll.jsp"/>
     </definition>
 
     <definition name="partsNew" extends="baseLayout">
         <put-attribute name="title" value="Add new part"/>
-        <put-attribute name="body" value="/WEB-INF/pages/parts/new.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/parts/new.jsp"/>
         <put-list-attribute name="javascripts" inherit="true">
             <add-attribute value="/js/newPart.js"/>
             <add-attribute value="/js/newPartAddProductionMethod.js"/>
@@ -56,12 +57,12 @@
 
     <definition name="standardPartsViewAll" extends="baseLayout">
         <put-attribute name="title" value="View all standard parts"/>
-        <put-attribute name="body" value="/WEB-INF/pages/standardParts/viewAll.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/standardParts/viewAll.jsp"/>
     </definition>
 
     <definition name="standardPartsNew" extends="baseLayout">
-        <put-attribute name="title" value="Add new standard part" />
-        <put-attribute name="body" value="/WEB-INF/pages/standardParts/new.jsp" />
+        <put-attribute name="title" value="Add new standard part"/>
+        <put-attribute name="body" value="/WEB-INF/pages/standardParts/new.jsp"/>
         <put-list-attribute name="javascripts" inherit="true">
             <add-attribute value="/js/newStandPart.js"/>
         </put-list-attribute>

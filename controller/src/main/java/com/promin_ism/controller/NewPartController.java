@@ -77,7 +77,7 @@ public class NewPartController {
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return "partsViewAll";
+        return "redirect:viewAll";
     }
 
     @RequestMapping(value = "/getMaterials", method = RequestMethod.GET)

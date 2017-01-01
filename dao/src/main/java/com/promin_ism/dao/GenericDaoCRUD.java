@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -64,7 +65,9 @@ public class GenericDaoCRUD <T> {
     protected List<T> findAll(Class<T> tClass) throws DatabaseException {
         try {
             LOGGER.debug("getting list");
-            List<T> tList = sessionFactory.getCurrentSession().createCriteria(tClass).list();
+            List<T> tList = sessionFactory.getCurrentSession().createCriteria(tClass).
+                    addOrder(Order.asc("id")).
+                    list();
             return tList;
         }
         catch (HibernateException e){
