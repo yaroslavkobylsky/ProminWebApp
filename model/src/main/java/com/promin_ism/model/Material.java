@@ -27,7 +27,7 @@ public class Material {
     private String sort;
 
     @Column(name = "lastDate")
-    private Date date;
+    private Date lastDate;
 
     @ManyToOne
     private MaterialType materilalType;
@@ -112,7 +112,7 @@ public class Material {
     @Override
     public String toString() {
         return "[Material: id=" + id + ", name=" + name + ", dimensions=" + dimensions + ", gost=" + gost + ", sort=" +
-                sort + ", lastDate=" + date.toLocaleString() + " ]";
+                sort + ", lastDate=" + lastDate.toLocaleString() + " ]";
     }
 
     public Long getId() {
@@ -156,11 +156,11 @@ public class Material {
     }
 
     public Date getDate() {
-        return date;
+        return lastDate;
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.lastDate = date;
     }
 
     public User getUser() {

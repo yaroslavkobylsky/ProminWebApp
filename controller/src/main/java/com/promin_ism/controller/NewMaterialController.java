@@ -60,7 +60,7 @@ public class NewMaterialController {
         }
 
         LOGGER.debug(material.toString());
-        return "materialViewAll";
+        return "redirect:viewAll";
     }
 
     @RequestMapping(value = "/getMaterialTypes", method = RequestMethod.GET)

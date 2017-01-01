@@ -38,6 +38,7 @@
     </definition>
 
     <definition name="materialViewAll" extends="baseLayout">
+        <put-attribute name="title" value="View all materials"/>
         <put-attribute name="body" value="/WEB-INF/pages/materials/viewAll.jsp"/>
     </definition>
 
