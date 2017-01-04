@@ -138,6 +138,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/errorPage.jsp">
           <value>
             <set />
@@ -449,6 +454,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/model/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java">
           <value>
             <set />
           </value>

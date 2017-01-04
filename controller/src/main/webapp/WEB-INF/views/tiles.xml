@@ -69,4 +69,9 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="assemblyEdit" extends="baseLayout">
+        <put-attribute name="title" value="Edit assembly"/>
+        <put-attribute name="body" value="/WEB-INF/pages/assemblies/edit.jsp"/>
+    </definition>
+
 </tiles-definitions>

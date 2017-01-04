@@ -11,6 +11,7 @@ public class Part {
     @Id
     @SequenceGenerator(name = "sequence", sequenceName = "SEQ_Part_ID", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")
+    @Column(name = "part_id")
     private Long id;
 
     @Column(name = "name")

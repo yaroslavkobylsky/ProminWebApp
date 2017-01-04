@@ -12,6 +12,7 @@ public class Material {
     @Id
     @SequenceGenerator(name = "sequence", sequenceName = "SEQ_Material_ID", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")
+    @Column(name = "material_id")
     private Long id;
 
     @Column(name = "name")
