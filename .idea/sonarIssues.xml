@@ -58,6 +58,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewAllAssembliesController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewAllMaterialsController.java">
           <value>
             <set />
@@ -139,6 +144,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/viewAll.jsp">
           <value>
             <set />
           </value>
@@ -303,6 +313,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/AssemblyDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/CommonDao.java">
           <value>
             <set />
@@ -349,6 +364,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/UserDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dao/src/main/java/com/promin_ism/dao/impl/AssemblyDaoImpl.java">
           <value>
             <set />
           </value>
@@ -523,6 +543,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/AssemblyService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/MaterialService.java">
           <value>
             <set />
@@ -549,6 +574,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/UserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/AssemblyServiceImpl.java">
           <value>
             <set />
           </value>

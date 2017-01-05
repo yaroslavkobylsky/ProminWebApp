@@ -74,4 +74,9 @@
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/edit.jsp"/>
     </definition>
 
+    <definition name="assemblyViewAll" extends="baseLayout">
+        <put-attribute name="title" value="View all assemblies"/>
+        <put-attribute name="body" value="/WEB-INF/pages/assemblies/viewAll.jsp"/>
+    </definition>
+
 </tiles-definitions>

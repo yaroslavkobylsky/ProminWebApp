@@ -34,16 +34,16 @@
                         </thead>
 
                         <tbody>
-                        <c:forEach var="material" items="${materials}">
+                        <c:forEach var="assembly" items="${materials}">
                             <tr>
-                                <td>${material.id}</td>
-                                <td>${material.name}</td>
-                                <td>${material.dimensions}</td>
-                                <td>${material.gost}</td>
-                                <td>${material.sort}</td>
-                                <td>${material.materilalType.name}</td>
+                                <td>${assembly.id}</td>
+                                <td>${assembly.name}</td>
+                                <td>${assembly.dimensions}</td>
+                                <td>${assembly.gost}</td>
+                                <td>${assembly.sort}</td>
+                                <td>${assembly.materilalType.name}</td>
                                     <%--<td>${material.lastDate}</td>--%>
-                                <td>${material.user.name}</td>
+                                <td>${assembly.user.name}</td>
                             </tr>
                         </c:forEach>
                         </tbody>
