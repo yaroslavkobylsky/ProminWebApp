@@ -36,4 +36,33 @@ public class AssemblyServiceImpl implements AssemblyService {
     public List<Assembly> findAll() throws DatabaseException {
         return assemblyDao.findAll();
     }
+
+    public boolean isNameUnique(String name) throws DatabaseException {
+        if (assemblyDao.findByName(name) != null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public boolean isNameUniqueOnEdit(String name, Long id) throws DatabaseException {
+        List<Assembly> assemblies = assemblyDao.findAllByName(name);
+        if (assemblies.size() > 1){
+            return false;
+        }
+        else {
+            if (assemblies.size() == 1){
+                if (assemblies.get(0).getId().equals(id)){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            else {
+                return true;
+            }
+        }
+    }
 }

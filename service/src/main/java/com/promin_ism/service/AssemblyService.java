@@ -11,4 +11,6 @@ public interface AssemblyService {
     Long create(Assembly assembly) throws DatabaseException;
     void delete(Assembly assembly) throws DatabaseException;
     List<Assembly> findAll() throws DatabaseException;
+    boolean isNameUnique(String name) throws DatabaseException;
+    boolean isNameUniqueOnEdit(String name, Long id) throws DatabaseException;
 }

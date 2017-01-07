@@ -10,12 +10,14 @@
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"/>
             <add-attribute value="/js/jAlert.js"/>
             <add-attribute value="/js/jAlert-functions.js"/>
+            <add-attribute value="/js/messagebox.js"/>
         </put-list-attribute>
         <put-list-attribute name="stylesheets">
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
             <add-attribute value="/css/common.css"/>
             <add-attribute value="/css/jAlert.css"/>
+            <add-attribute value="/css/messagebox.css"/>
         </put-list-attribute>
     </definition>
 
@@ -72,11 +74,18 @@
     <definition name="assemblyEdit" extends="baseLayout">
         <put-attribute name="title" value="Edit assembly"/>
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/edit.jsp"/>
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/editAssembly.js"/>
+            <add-attribute value="/js/util.js"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="assemblyViewAll" extends="baseLayout">
         <put-attribute name="title" value="View all assemblies"/>
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/viewAll.jsp"/>
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/viewAllAssemblies.js"/>
+        </put-list-attribute>
     </definition>
 
 </tiles-definitions>

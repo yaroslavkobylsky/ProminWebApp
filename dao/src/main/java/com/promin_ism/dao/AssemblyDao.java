@@ -10,4 +10,6 @@ public interface AssemblyDao {
     Long create(Assembly assembly) throws DatabaseException;
     void delete(Assembly assembly) throws DatabaseException;
     List<Assembly> findAll() throws DatabaseException;
+    Assembly findByName(String name) throws DatabaseException;
+    List<Assembly> findAllByName(String name) throws DatabaseException;
 }

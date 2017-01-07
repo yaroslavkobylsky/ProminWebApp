@@ -8,10 +8,11 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <h1 style="text-align: center">List of all materials</h1>
+                <h1 style="text-align: center">List of all assemblies</h1>
             </div>
-
-            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <button class="btn" onclick="return newAssembly()">Add new assembly</buttonclas>
+            </div>
         </div>
 
         <br/>
