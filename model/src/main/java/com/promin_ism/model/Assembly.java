@@ -1,5 +1,7 @@
 package com.promin_ism.model;
 
+import com.google.common.base.Objects;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -22,28 +24,28 @@ public class Assembly {
     @Column(name = "descName")
     private String descName;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "assembly_assembly",
             joinColumns = @JoinColumn(name = "assembly_id"))
     @MapKeyJoinColumn(name = "assembly_embedded_id")
     @Column(name = "quantity", nullable = false)
     private Map<Assembly, Long> assemblies;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "assembly_part",
             joinColumns = @JoinColumn(name = "assembly_id"))
     @MapKeyJoinColumn(name = "part_id")
     @Column(name = "quantity", nullable = false)
     private Map<Part, Long> parts;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "assembly_standart_part",
             joinColumns = @JoinColumn(name = "assembly_id"))
     @MapKeyJoinColumn(name = "standard_part_id")
     @Column(name = "quantity", nullable = false)
     private Map<StandardPart, Long> standartParts;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "assembly_material",
             joinColumns = @JoinColumn(name = "assembly_id"))
     @MapKeyJoinColumn(name = "material_id")
@@ -61,22 +63,7 @@ public class Assembly {
 
     @Override
     public int hashCode() {
-        int hashCode = 1;
-
-        if(name != null){
-            hashCode = hashCode*name.hashCode() + name.hashCode();
-        }
-        else {
-            hashCode++;
-        }
-
-        if(descName != null){
-            hashCode = hashCode*descName.hashCode() + descName.hashCode();
-        }
-        else {
-            hashCode+=2;
-        }
-        return hashCode;
+        return Objects.hashCode(this.name, this.descName);
     }
 
     @Override

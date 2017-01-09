@@ -1,5 +1,6 @@
 package com.promin_ism.model;
 
+import com.google.common.base.Objects;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -55,37 +56,7 @@ public class Material {
 
     @Override
     public int hashCode() {
-        int hashCode = 1;
-
-        if(name != null){
-            hashCode = hashCode*name.hashCode() + name.hashCode();
-        }
-        else {
-            hashCode+=1;
-        }
-
-        if(dimensions != null){
-            hashCode = hashCode*dimensions.hashCode() + dimensions.hashCode();
-        }
-        else {
-            hashCode+= 2;
-        }
-
-        if(gost != null){
-            hashCode = hashCode*gost.hashCode() + gost.hashCode();
-        }
-        else {
-            hashCode+= 4;
-        }
-
-        if(sort != null){
-            hashCode = hashCode*sort.hashCode() + sort.hashCode();
-        }
-        else {
-            hashCode+= 8;
-        }
-
-        return hashCode;
+        return Objects.hashCode(this.name, this.dimensions, this.sort, this.gost);
     }
 
     @Override

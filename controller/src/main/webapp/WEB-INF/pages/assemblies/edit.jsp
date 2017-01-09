@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -96,6 +97,9 @@
                         <div class="col-md-8">
                             <select class="form-control input-sm" name="partToAdd" id ="partToAdd">
                                 <option value='-1' disabled selected></option>
+                                <c:forEach var="part" items="${parts}">
+                                    <option value='${part.id}'>${part.name}</option>
+                                </c:forEach>
                             </select>
                         </div>
                     </div>
@@ -103,10 +107,10 @@
                     <div class="row">
                         <label class="control-label col-md-4">quantity:</label>
                         <div class="col-md-4">
-                            <input type="text" class="form-control input-sm" name="partQuantity" id="partQuantity">
+                            <input type="number" min="1" step="1" value="1" class="form-control input-sm" name="partQuantity" id="partQuantity">
                         </div>
                         <div class="col-sm-4">
-                            <button class="btn btn-success" type="submit" id="addPart" style="align-content: center" onclick="return false">add</button>
+                            <button class="btn btn-success" type="submit" id="addPart" style="align-content: center" onclick="addPart()">add</button>
                         </div>
                     </div>
                 </div>
@@ -180,6 +184,38 @@
 
         </div>
     </div>
+
+    <div class="row">
+            <%--assemblies--%>
+        <div class="col-sm-3"></div>
+
+            <%--parts--%>
+        <div class="col-sm-3">
+            <table class="table" id="partTable">
+                <tbody>
+                    <c:forEach var="entry" items="${assembly.parts}">
+                        <tr id="part${entry.key.id}">
+                            <td>${entry.key.name}</td>
+                            <td>${entry.value}</td>
+                            <td><button class="btn btn-warning" onclick="deletePart(${entry.key.id}, ${assembly.id})">-</button></td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+        </div>
+
+            <%--standard parts--%>
+        <div class="col-sm-3"></div>
+
+                <%--materials--%>
+        <div class="col-sm-3"></div>
+    </div>
+
+
+
+
+
+
 
 
 

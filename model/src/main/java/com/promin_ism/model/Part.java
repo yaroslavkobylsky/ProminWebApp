@@ -1,5 +1,7 @@
 package com.promin_ism.model;
 
+import com.google.common.base.Objects;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -45,46 +47,7 @@ public class Part {
 
     @Override
     public int hashCode() {
-        int hashCode = 1;
-
-        if (name != null){
-            hashCode = hashCode*name.hashCode() + name.hashCode();
-        }
-        else{
-            hashCode++;
-        }
-
-        if (descName != null){
-            hashCode = hashCode*descName.hashCode() + descName.hashCode();
-        }
-        else{
-            hashCode+=2;
-        }
-
-        if(material!=null){
-            hashCode = hashCode*material.hashCode() + material.hashCode();
-        }
-        else {
-            hashCode+=4;
-        }
-
-        if(materialNormWeight!=null){
-            hashCode = hashCode*materialNormWeight.intValue() + materialNormWeight.hashCode();
-        }
-        else {
-            hashCode+= 8;
-        }
-
-        if(isPurchased.booleanValue()){
-            if(isPurchased.booleanValue()){
-                hashCode++;
-            }
-        }
-        else {
-            hashCode+= 16;
-        }
-
-        return hashCode;
+        return Objects.hashCode(this.name, this.descName, this.isPurchased, this.materialNormWeight);
     }
 
     @Override
