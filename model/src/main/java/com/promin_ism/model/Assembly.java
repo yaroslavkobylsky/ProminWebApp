@@ -43,7 +43,7 @@ public class Assembly {
             joinColumns = @JoinColumn(name = "assembly_id"))
     @MapKeyJoinColumn(name = "standard_part_id")
     @Column(name = "quantity", nullable = false)
-    private Map<StandardPart, Long> standartParts;
+    private Map<StandardPart, Long> standardParts;
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "assembly_material",
@@ -120,8 +120,8 @@ public class Assembly {
         if(standardPart == null){
             return false;
         }
-        if(standartParts.containsKey(standardPart)){
-            standartParts.remove(standardPart);
+        if(standardParts.containsKey(standardPart)){
+            standardParts.remove(standardPart);
             return true;
         }
         else{
@@ -178,17 +178,17 @@ public class Assembly {
     }
 
     public boolean addStandartPart(StandardPart standardPart, Long quantity){
-        if(this.standartParts==null){
-            standartParts = new HashMap();
+        if(this.standardParts ==null){
+            standardParts = new HashMap();
         }
-        if (standartParts.containsKey(standardPart)){
+        if (standardParts.containsKey(standardPart)){
             return false;
         }
         if(quantity == null || quantity.longValue() <= 0 ){
             return false;
         }
         else{
-            standartParts.put(standardPart, quantity);
+            standardParts.put(standardPart, quantity);
             return true;
         }
     }
@@ -249,12 +249,12 @@ public class Assembly {
         this.parts = parts;
     }
 
-    public Map<StandardPart, Long> getStandartParts() {
-        return standartParts;
+    public Map<StandardPart, Long> getStandardParts() {
+        return standardParts;
     }
 
-    public void setStandartParts(Map<StandardPart, Long> standartParts) {
-        this.standartParts = standartParts;
+    public void setStandardParts(Map<StandardPart, Long> standartParts) {
+        this.standardParts = standartParts;
     }
 
     public Map<Material, BigDecimal> getMaterials() {

@@ -114,6 +114,86 @@ function addPart(){
     })
 }
 
+function addStandardPart(){
+    console.log("adding standard part to assembly");
+    var standardPartId = $("#standardPartToAdd").val();
+    console.log("standard part id:" + standardPartId);
+    if (standardPartId < 0 || standardPartId == null || standardPartId == undefined){
+        alert("Standard part must be selected");
+        return;
+    }
+    var quantity = $("#standardPartQuantity").val();
+    if (quantity < 1){
+        alert("Specify the quantity");
+        return;
+    }
+    var standardPartName = $("#standardPartToAdd option:selected").text();
+    console.log("standard part name:" + standardPartName);
+    var assemblyId = getUrlParameter("id");
+
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/addStandardPart',
+        data: {
+            'standardPartId': standardPartId,
+            'assemblyId': assemblyId,
+            'quantity': quantity
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("standard part was not added to the assembly");
+                    alert("standard part was not added to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("Standard part was added to the assembly");
+                    alert("Standard part was added to the assembly");
+                    var row = createTableRow(standardPartName.trim(), quantity, standardPartId, assemblyId, "deleteStandardPart", "standardPart" + standardPartId);
+                    console.log(row);
+                    $("#standardPartTable").append(row);
+                }
+            });
+        }
+    })
+}
+
+function deleteStandardPart(standardPartId, assemblyId){
+    console.log("Delete standard part with id:" + standardPartId +  " from assembly with id: " + assemblyId);
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/removeStandardPart',
+        data: {
+            'standardPartId': standardPartId,
+            'assemblyId': assemblyId
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("standard part doesn't belong to the assembly");
+                    alert("standard part doesn't belong to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("Standard part was removed from assembly");
+                    $("#standardPart" + standardPartId).remove();
+                    alert("Standard part was removed from assembly");
+                }
+            });
+        }
+    });
+}
+
 function createTableRow(name, quantity, fieldId, assemblyId, funcName, rowId){
     var row = $("<tr></tr>");
     var nameColumn = $("<td></td>");
