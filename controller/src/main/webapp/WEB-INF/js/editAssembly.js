@@ -105,7 +105,8 @@ function addPart(){
                 if (this.result == 1) {
                     console.log("Part was added to the assembly");
                     alert("Part was added to the assembly");
-                    var row = createTableRow(partName.trim(), quantity, partId, assemblyId, "deletePart", "part" + partId);
+                    var row = createTableRow(partName.trim(), quantity, partId, assemblyId, "deletePart",
+                        "part" + partId);
                     console.log(row);
                     $("#partTable").append(row);
                 }
@@ -154,7 +155,8 @@ function addStandardPart(){
                 if (this.result == 1) {
                     console.log("Standard part was added to the assembly");
                     alert("Standard part was added to the assembly");
-                    var row = createTableRow(standardPartName.trim(), quantity, standardPartId, assemblyId, "deleteStandardPart", "standardPart" + standardPartId);
+                    var row = createTableRow(standardPartName.trim(), quantity, standardPartId, assemblyId,
+                        "deleteStandardPart", "standardPart" + standardPartId);
                     console.log(row);
                     $("#standardPartTable").append(row);
                 }
@@ -188,6 +190,87 @@ function deleteStandardPart(standardPartId, assemblyId){
                     console.log("Standard part was removed from assembly");
                     $("#standardPart" + standardPartId).remove();
                     alert("Standard part was removed from assembly");
+                }
+            });
+        }
+    });
+}
+
+function addMaterial(){
+    console.log("adding material to assembly");
+    var materialId = $("#materialToAdd").val();
+    console.log("material id:" + materialId);
+    if (materialId < 0 || materialId == null || materialId == undefined){
+        alert("Standard partMaterial must be selected");
+        return;
+    }
+    var quantity = $("#materialQuantity").val();
+    if (quantity < 0.01){
+        alert("Specify the quantity");
+        return;
+    }
+    var materialName = $("#materialToAdd option:selected").text();
+    console.log("material name:" + materialName);
+    var assemblyId = getUrlParameter("id");
+
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/addMaterial',
+        data: {
+            'materialId': materialId,
+            'assemblyId': assemblyId,
+            'quantity': quantity
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("material was not added to the assembly");
+                    alert("material was not added to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("Material was added to the assembly");
+                    alert("Material was added to the assembly");
+                    var row = createTableRow(materialName.trim(), quantity, materialId, assemblyId,
+                        "deleteMaterial", "material" + materialId);
+                    console.log(row);
+                    $("#materialTable").append(row);
+                }
+            });
+        }
+    })
+}
+
+function deleteMaterial(materialId, assemblyId){
+    console.log("Delete material with id:" + materialId +  " from assembly with id: " + assemblyId);
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/removeMaterial',
+        data: {
+            'materialId': materialId,
+            'assemblyId': assemblyId
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("material doesn't belong to the assembly");
+                    alert("material doesn't belong to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("material was removed from assembly");
+                    $("#material" + materialId).remove();
+                    alert("material was removed from assembly");
                 }
             });
         }

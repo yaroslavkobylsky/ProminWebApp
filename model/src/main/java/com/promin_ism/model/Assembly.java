@@ -200,7 +200,7 @@ public class Assembly {
         if (materials.containsKey(material)){
             return false;
         }
-        if(quantity == null || quantity.longValue() <= 0 ){
+        if(quantity == null || quantity.floatValue() <= 0){
             return false;
         }
         else{

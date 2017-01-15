@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d0d3b7-ddef-4706-be17-e01de0fbd246" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/target/controller.war" afterPath="$PROJECT_DIR$/controller/target/controller.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java" afterPath="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp" />
@@ -34,7 +32,48 @@
     <favorites_list name="test2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.5422535">
+              <caret line="242" column="14" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editAssembly.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="237" column="35" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditAssemblyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="247" column="5" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assembly.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="202" column="53" selection-start-line="202" selection-start-column="53" selection-end-line="202" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,8 +146,8 @@
         <option value="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/StandardPart.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js" />
       </list>
     </option>
@@ -463,6 +502,17 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -479,17 +529,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1291,6 +1330,7 @@
       <workItem from="1484243050771" duration="2457000" />
       <workItem from="1484251183414" duration="1593000" />
       <workItem from="1484335897124" duration="789000" />
+      <workItem from="1484465673802" duration="6354000" />
     </task>
     <servers />
   </component>
@@ -1327,7 +1367,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328499000" />
+    <option name="totallyTimeSpent" value="334853000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1358,7 +1398,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19710468" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46547884" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23804227" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1391,12 +1431,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31034482" sideWeight="0.4978678" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30957684" sideWeight="0.4978678" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26280624" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19710468" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23804227" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1720,13 +1760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6448276">
-          <caret line="58" column="82" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/MaterialType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.254023">
@@ -1762,78 +1795,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js">
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3780664">
-          <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.62528735">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024531025">
-          <caret line="15" column="113" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2040#2041#0" expanded="false" />
-            <element signature="e#2105#2106#0" expanded="false" />
-            <element signature="e#5761#5762#0" expanded="false" />
-            <element signature="e#5786#5787#0" expanded="false" />
-            <element signature="e#5820#5821#0" expanded="false" />
-            <element signature="e#5848#5849#0" expanded="false" />
-            <element signature="e#5879#5880#0" expanded="false" />
-            <element signature="e#5906#5907#0" expanded="false" />
-            <element signature="e#5946#5947#0" expanded="false" />
-            <element signature="e#5978#5979#0" expanded="false" />
-            <element signature="e#6013#6014#0" expanded="false" />
-            <element signature="e#6044#6045#0" expanded="false" />
-            <element signature="e#6092#6093#0" expanded="false" />
-            <element signature="e#6132#6133#0" expanded="false" />
-            <element signature="e#6182#6183#0" expanded="false" />
-            <element signature="e#6215#6216#0" expanded="false" />
-            <element signature="e#6280#6281#0" expanded="false" />
-            <element signature="e#6324#6325#0" expanded="false" />
-            <element signature="e#6365#6366#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="false" />
-            <element signature="e#6444#6445#0" expanded="false" />
-            <element signature="e#6478#6479#0" expanded="false" />
-            <element signature="e#6535#6536#0" expanded="false" />
-            <element signature="e#6571#6572#0" expanded="false" />
-            <element signature="e#6646#6647#0" expanded="false" />
-            <element signature="e#6696#6697#0" expanded="false" />
-            <element signature="e#6751#6752#0" expanded="false" />
-            <element signature="e#6783#6784#0" expanded="false" />
-            <element signature="e#6852#6853#0" expanded="false" />
-            <element signature="e#6894#6895#0" expanded="false" />
-            <element signature="e#6935#6936#0" expanded="false" />
-            <element signature="e#6972#6973#0" expanded="false" />
-            <element signature="e#7032#7033#0" expanded="false" />
-            <element signature="e#7084#7085#0" expanded="false" />
-            <element signature="e#7117#7118#0" expanded="false" />
-            <element signature="e#7148#7149#0" expanded="false" />
-            <element signature="e#7194#7195#0" expanded="false" />
-            <element signature="e#7234#7235#0" expanded="false" />
-            <element signature="e#7263#7264#0" expanded="false" />
-            <element signature="e#7290#7291#0" expanded="false" />
-            <element signature="e#7328#7329#0" expanded="false" />
-            <element signature="e#7360#7361#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="202" column="53" selection-start-line="202" selection-start-column="53" selection-end-line="202" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26406926">
-          <caret line="161" column="67" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="247" column="5" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/editAssembly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="35" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5157421">
-          <caret line="217" column="91" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="91" />
+        <state vertical-scroll-proportion="1.5422535">
+          <caret line="242" column="14" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
           <folding />
         </state>
       </provider>

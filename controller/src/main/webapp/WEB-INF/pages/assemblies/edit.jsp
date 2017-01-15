@@ -169,6 +169,9 @@
                         <div class="col-md-8">
                             <select class="form-control input-sm" name="materialToAdd" id ="materialToAdd">
                                 <option value='-1' disabled selected></option>
+                                <c:forEach var="material" items="${materials}">
+                                    <option value='${material.id}'>${material.name} ${material.dimensions}</option>
+                                </c:forEach>
                             </select>
                         </div>
                     </div>
@@ -176,10 +179,10 @@
                     <div class="row">
                         <label class="control-label col-md-4">quantity:</label>
                         <div class="col-md-4">
-                            <input type="text" class="form-control input-sm" name="materialQuantity" id="materialQuantity">
+                            <input type="number" min="0" step="0.01" value="0" class="form-control input-sm" name="materialQuantity" id="materialQuantity">
                         </div>
                         <div class="col-sm-4">
-                            <button class="btn btn-success" type="submit" id="addMaterial" style="align-content: center" onclick="return false">add</button>
+                            <button class="btn btn-success" type="submit" id="addMaterial" style="align-content: center" onclick="addMaterial()">add</button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +226,21 @@
         </div>
 
                 <%--materials--%>
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <div class="col-sm-3">
+                <table class="table" id="materialTable">
+                    <tbody>
+                    <c:forEach var="entry" items="${assembly.materials}">
+                        <tr id="material${entry.key.id}">
+                            <td>${entry.key.name}</td>
+                            <td>${entry.value}</td>
+                            <td><button class="btn btn-warning" onclick="deleteMaterial(${entry.key.id}, ${assembly.id})">-</button></td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 </body>
