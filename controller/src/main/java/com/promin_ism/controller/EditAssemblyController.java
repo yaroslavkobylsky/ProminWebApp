@@ -44,11 +44,17 @@ public class EditAssemblyController {
         List<Part> parts = new ArrayList();
         List<StandardPart> standardParts = new ArrayList();
         List<Material> materials = new ArrayList();
+        List<Assembly> assemblies = new ArrayList();
         try {
             assembly = assemblyService.read(id);
             parts = partService.findAll();
             standardParts = standardPartService.findAll();
             materials = materialService.findAll();
+            assemblies = assemblyService.findAll();
+//            assemblies.stream().forEach(o->LOGGER.debug("assembly: " + o.toString()));
+            for (Assembly assembly1: assemblies) {
+                LOGGER.debug("assembly: " + assembly1.toString());
+            }
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
@@ -56,6 +62,7 @@ public class EditAssemblyController {
         modelAndView.addObject("parts", parts);
         modelAndView.addObject("standardParts", standardParts);
         modelAndView.addObject("materials", materials);
+        modelAndView.addObject("assemblies", assemblies);
         return modelAndView;
     }
 
@@ -231,6 +238,62 @@ public class EditAssemblyController {
             Assembly assembly = assemblyService.read(assemblyId);
             Material material = materialService.read(materialId);
             BigDecimal quantity = assembly.getMaterials().remove(material);
+            if (quantity != null){
+                assemblyService.update(assembly);
+                resultMap.put("result", new Long(1));
+                return resultMap;
+            }
+            else {
+                resultMap.put("result", new Long(-1));
+                return resultMap;
+            }
+        } catch (DatabaseException e) {
+            LOGGER.error(e);
+            resultMap.put("result", new Long(0));
+            return resultMap;
+        }
+    }
+
+    @RequestMapping(value = "/assemblies/edit/addAssembly", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Long> addAssembly(Long addAssemblyId, Long assemblyId, Long quantity){
+        LOGGER.debug("add assembly to assembly method");
+        LOGGER.debug("adding assembly id: " + addAssemblyId + ", assembly id: " + assemblyId + ", quantity: " + quantity);
+        Map<String, Long> resultMap = new HashMap();
+        try {
+            Assembly assembly = assemblyService.read(assemblyId);
+            Assembly addingAssembly = assemblyService.read(addAssemblyId);
+            if (assembly.addAssembly(addingAssembly, quantity))
+            {
+                assemblyService.update(assembly);
+                resultMap.put("result", new Long(1));
+                return resultMap;
+            }
+            else {
+                resultMap.put("result", new Long(-1));
+                return resultMap;
+            }
+        } catch (DatabaseException e) {
+            LOGGER.error(e);
+            resultMap.put("result", new Long(0));
+            return resultMap;
+        }
+    }
+
+    @RequestMapping(value = "/assemblies/edit/removeAssembly", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Long> removeAssembly(Long removeAssemblyId, Long assemblyId){
+        LOGGER.debug("remove assembly from assembly method");
+        LOGGER.debug("remove assembly id: " + removeAssemblyId + " , assembly id: " + assemblyId);
+        Map<String, Long> resultMap = new HashMap();
+        try {
+            LOGGER.debug("reading assemblies");
+            Assembly assembly = assemblyService.read(assemblyId);
+            LOGGER.debug("main assembly: " + assembly.toString());
+            Assembly removingAssembly = assemblyService.read(removeAssemblyId);
+            LOGGER.debug("removed assembly: " + removingAssembly.toString());
+            Long quantity = assembly.getAssemblies().remove(removingAssembly);
+            LOGGER.debug("quantity: " + quantity);
             if (quantity != null){
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));

@@ -1,5 +1,6 @@
 package com.promin_ism.model;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 import javax.persistence.*;
@@ -35,7 +36,15 @@ public class StandardPart {
 
     @Override
     public String toString() {
-        return "[ StandardPart: id=" + id + " name=" + name + " gost=" + gost + " wight=" + weight + " additionaInfo=" + additionalInfo + "]";
+//        return "[ StandardPart: id=" + id + " name=" + name + " gost=" + gost + " wight=" + weight + " additionaInfo=" + additionalInfo + "]";
+        return MoreObjects.toStringHelper(this)
+                .add("id", id)
+                .add("name", name)
+                .add("gost", gost)
+                .add("weight", weight)
+                .add("info", additionalInfo)
+                .add("date", lastDate)
+                .toString();
     }
 
     @Override

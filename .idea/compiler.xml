@@ -22,14 +22,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="controller" />
         <module name="dao" />
         <module name="model" />
         <module name="service" />
       </profile>
+      <profile default="false" name="Annotation profile for controller" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="controller" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="controller" target="1.5" />
+      <module name="controller" target="1.8" />
       <module name="dao" target="1.5" />
       <module name="model" target="1.5" />
       <module name="promin" target="1.5" />

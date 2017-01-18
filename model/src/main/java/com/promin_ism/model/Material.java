@@ -1,5 +1,6 @@
 package com.promin_ism.model;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import org.springframework.stereotype.Component;
 
@@ -83,8 +84,14 @@ public class Material {
 
     @Override
     public String toString() {
-        return "[Material: id=" + id + ", name=" + name + ", dimensions=" + dimensions + ", gost=" + gost + ", sort=" +
-                sort + ", lastDate=" + lastDate.toLocaleString() + " ]";
+        return MoreObjects.toStringHelper(this)
+                .add("id", id)
+                .add("name", name)
+                .add("dimensions", dimensions)
+                .add("gost", gost)
+                .add("sort", sort)
+                .add("date", lastDate)
+                .toString();
     }
 
     public Long getId() {

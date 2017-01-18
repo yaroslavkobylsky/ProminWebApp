@@ -1,5 +1,6 @@
 package com.promin_ism.model;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 import javax.persistence.*;
@@ -77,12 +78,8 @@ public class Assembly {
         else{
             if (obj instanceof Assembly){
                 Assembly assembly = (Assembly)obj;
-                if(this.name.equals(assembly.getName()) && this.descName.equals(assembly.getDescName())){
-                    return true;
-                }
-                else{
-                    return false;
-                }
+                return Objects.equal(this.getName(), assembly.getName())
+                        && Objects.equal(this.getDescName(), assembly.getDescName());
             }
             else {
                 return false;
@@ -191,6 +188,17 @@ public class Assembly {
             standardParts.put(standardPart, quantity);
             return true;
         }
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("id", id)
+                .add("name", name)
+                .add("description name", descName)
+                .add("info", additionalInfo)
+                .add("date", lastDate)
+                .toString();
     }
 
     public boolean addMaterials(Material material, BigDecimal quantity){

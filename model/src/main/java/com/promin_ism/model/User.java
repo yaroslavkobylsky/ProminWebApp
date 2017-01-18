@@ -1,5 +1,7 @@
 package com.promin_ism.model;
 
+import com.google.common.base.MoreObjects;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -86,6 +88,11 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "user:[id=" + id +", login=" + login + ", name=" + name + "]";
+        return MoreObjects.toStringHelper(this)
+                .add("id", id)
+                .add("name", name)
+                .add("login", login)
+                .add("pass", password)
+                .toString();
     }
 }

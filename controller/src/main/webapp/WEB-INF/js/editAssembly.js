@@ -201,7 +201,7 @@ function addMaterial(){
     var materialId = $("#materialToAdd").val();
     console.log("material id:" + materialId);
     if (materialId < 0 || materialId == null || materialId == undefined){
-        alert("Standard partMaterial must be selected");
+        alert("Material must be selected");
         return;
     }
     var quantity = $("#materialQuantity").val();
@@ -271,6 +271,87 @@ function deleteMaterial(materialId, assemblyId){
                     console.log("material was removed from assembly");
                     $("#material" + materialId).remove();
                     alert("material was removed from assembly");
+                }
+            });
+        }
+    });
+}
+
+function addAssembly(){
+    console.log("adding assembly to assembly");
+    var addAssemblyId = $("#assemblyToAdd").val();
+    console.log("add assembly id:" + addAssemblyId);
+    if (addAssemblyId < 0 || addAssemblyId == null || addAssemblyId == undefined){
+        alert("Assembly must be selected");
+        return;
+    }
+    var quantity = $("#assemblyQuantity").val();
+    if (quantity < 1){
+        alert("Specify the quantity");
+        return;
+    }
+    var assAssemblyName = $("#assemblyToAdd option:selected").text();
+    console.log("add assembly name:" + assAssemblyName);
+    var assemblyId = getUrlParameter("id");
+
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/addAssembly',
+        data: {
+            'addAssemblyId': addAssemblyId,
+            'assemblyId': assemblyId,
+            'quantity': quantity
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("assembly was not added to the assembly");
+                    alert("Assembly was not added to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("Assembly was added to the assembly");
+                    alert("Assembly was added to the assembly");
+                    var row = createTableRow(assAssemblyName.trim(), quantity, addAssemblyId, assemblyId,
+                        "deleteAssembly", "assembly" + addAssemblyId);
+                    console.log(row);
+                    $("#assemblyTable").append(row);
+                }
+            });
+        }
+    })
+}
+
+function deleteAssembly(removeAssemblyId, assemblyId){
+    console.log("Delete assembly with id:" + removeAssemblyId +  " from assembly with id: " + assemblyId);
+    $.ajax({
+        type: 'POST',
+        url: '/assemblies/edit/removeAssembly',
+        data: {
+            'removeAssemblyId': removeAssemblyId,
+            'assemblyId': assemblyId
+        },
+        success: function(result){
+            $(jQuery.parseJSON(JSON.stringify(result))).each(function() {
+                console.log(this);
+                console.log("result: " + this.result);
+                if (this.result == -1 ){
+                    console.log("Assembly doesn't belong to the assembly");
+                    alert("Assembly doesn't belong to the assembly");
+                }
+                if (this.result == 0) {
+                    console.log("server error");
+                    alert("Server error, try later!");
+                }
+                if (this.result == 1) {
+                    console.log("Assembly was removed from assembly");
+                    $("#assembly" + removeAssemblyId).remove();
+                    alert("Assembly was removed from assembly");
                 }
             });
         }
