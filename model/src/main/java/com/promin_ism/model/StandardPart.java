@@ -36,7 +36,6 @@ public class StandardPart {
 
     @Override
     public String toString() {
-//        return "[ StandardPart: id=" + id + " name=" + name + " gost=" + gost + " wight=" + weight + " additionaInfo=" + additionalInfo + "]";
         return MoreObjects.toStringHelper(this)
                 .add("id", id)
                 .add("name", name)
@@ -49,7 +48,7 @@ public class StandardPart {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(this.name, this.gost, this.weight);
+        return Objects.hashCode(this.name, this.gost);
     }
 
     @Override
@@ -59,12 +58,8 @@ public class StandardPart {
         }
         if(obj instanceof StandardPart){
             StandardPart standardPart = (StandardPart)obj;
-            if( name.equals(standardPart.name) && gost.equals(standardPart.getGost()) ){
-                return true;
-            }
-            else {
-                return false;
-            }
+            return Objects.equal(this.name, standardPart.getName())
+             && Objects.equal(this.gost, standardPart.gost);
         }
         else {
             return false;

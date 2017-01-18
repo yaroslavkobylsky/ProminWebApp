@@ -68,13 +68,10 @@ public class Material {
         else {
             if (obj instanceof Material){
                 Material material = (Material)obj;
-                if(name.equals(material.getName()) && dimensions.equals(material.getDimensions())
-                        && gost.equals(material.getGost()) && sort.equals(material.getSort())){
-                    return true;
-                }
-                else {
-                    return false;
-                }
+                return Objects.equal(this.name, material.name)
+                && Objects.equal(this.dimensions, material.dimensions)
+                && Objects.equal(this.sort, material.sort)
+                && Objects.equal(this.gost, material.gost);
             }
             else {
                 return false;

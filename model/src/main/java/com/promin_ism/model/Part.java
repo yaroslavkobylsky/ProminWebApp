@@ -66,12 +66,10 @@ public class Part {
         else {
             if(obj instanceof Part){
                 Part part = (Part)obj;
-                if(name.equals(part.getName()) && descName.equals(part.getDescName())){
-                    return true;
-                }
-                else {
-                    return false;
-                }
+                return Objects.equal(this.name, part.name)
+                        && Objects.equal(this.descName, part.descName)
+                        && Objects.equal(this.isPurchased, part.isPurchased)
+                        && Objects.equal(this.materialNormWeight, part.materialNormWeight);
             }
             else {
                 return false;
