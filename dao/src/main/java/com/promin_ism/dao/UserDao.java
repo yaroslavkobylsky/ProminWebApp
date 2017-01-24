@@ -10,6 +10,6 @@ public interface UserDao {
      Long create(User user) throws DatabaseException;
      void delete(User user) throws DatabaseException;
      List<User> findAll() throws DatabaseException;
-    /*User getByLoginPass(String login, String password);*/
+     User getByLoginPass(String login, String password) throws DatabaseException;
 
 }

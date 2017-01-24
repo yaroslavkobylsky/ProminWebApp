@@ -43,6 +43,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/LoginController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/NewMaterialController.java">
           <value>
             <set />
@@ -99,6 +104,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/JsonViewResolver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/filter/LoginFilter.java">
           <value>
             <set />
           </value>
@@ -184,6 +194,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/layout.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/login.jsp">
           <value>
             <set />
           </value>

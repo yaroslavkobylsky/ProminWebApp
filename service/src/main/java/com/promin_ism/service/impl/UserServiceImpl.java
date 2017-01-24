@@ -36,4 +36,8 @@ public class UserServiceImpl implements UserService {
     public List<User> findAll() throws DatabaseException {
         return userDao.findAll();
     }
+
+    public User getByLoginPass(String login, String password) throws DatabaseException {
+        return userDao.getByLoginPass(login, password);
+    }
 }

@@ -23,6 +23,10 @@
     <body>
 
         <div class="container">
+            <div style="position: absolute; right: 30px">
+                <a href="/logout" >logout</a>
+            </div>
+
             <!-- Header -->
             <div>
                 <tiles:insertAttribute name="header" />

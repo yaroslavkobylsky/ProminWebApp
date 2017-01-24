@@ -5,7 +5,9 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.UserDao;
 import com.promin_ism.model.User;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -24,6 +26,19 @@ public class UserDaoImpl extends GenericDaoCRUD<User> implements UserDao {
 
     public List<User> findAll() throws DatabaseException {
         return findAll(User.class);
+    }
+
+    public User getByLoginPass(String login, String password) throws DatabaseException {
+        try {
+            return (User)getSessionFactory().getCurrentSession().createCriteria(User.class)
+                    .add(Restrictions.eq("login",login))
+                    .add(Restrictions.eq("password", password))
+                    .uniqueResult();
+        }
+        catch (HibernateException e){
+            LOGGER.error("error in find user by login and password", e);
+            throw new DatabaseException(e.getMessage());
+        }
     }
 
 

@@ -11,4 +11,5 @@ public interface UserService {
     Long create(User user) throws DatabaseException;
     void delete(User user) throws DatabaseException;
     List<User> findAll() throws DatabaseException;
+    User getByLoginPass(String login, String password) throws DatabaseException;
 }
