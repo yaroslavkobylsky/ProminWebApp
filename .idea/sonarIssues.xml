@@ -203,7 +203,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/materials/edit.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/materials/new.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/materials/view.jsp">
           <value>
             <set />
           </value>
@@ -213,7 +223,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/view.jsp">
           <value>
             <set />
           </value>
@@ -223,7 +243,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/edit.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/new.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/view.jsp">
           <value>
             <set />
           </value>

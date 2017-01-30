@@ -3,7 +3,8 @@
 <tiles:importAttribute name="javascripts"/>
 <tiles:importAttribute name="stylesheets"/>
 <tiles:importAttribute name="title"/>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -21,7 +22,6 @@
 
     </head>
     <body>
-
         <div class="container">
             <div style="position: absolute; right: 30px">
                 <a href="/logout" >logout</a>

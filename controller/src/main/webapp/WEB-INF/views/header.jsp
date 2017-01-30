@@ -1,54 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-</head>
-<body>
-<%--<nav class="navbar navbar-default">
-
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       Assemblies<span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">View all</a></li>
-        <li><a href="#">New</a></li>
-    </ul>
-</div>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Parts <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">View all</a></li>
-        <li><a href="#">New</a></li>
-    </ul>
-</div>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Standard parts<span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">View all</a></li>
-    <li><a href="#">New</a></li>
-    </ul>
-</div>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Materials <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">View all</a></li>
-        <li><a href="#">New</a></li>
-    </ul>
-</div>
-</nav>--%>
-
 <div class="page-header">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -96,12 +45,6 @@
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
-
-
-
         </div><!-- /.container-fluid -->
     </nav>
 </div>
-
-</body>
-</html>

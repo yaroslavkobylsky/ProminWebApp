@@ -1,9 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-</head>
-<body>
-<div class="container">
+
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
@@ -100,6 +95,4 @@
             <div class="col-sm-3"></div>
         </div>
     </form>
-</div>
-</body>
-</html>
+
