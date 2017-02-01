@@ -33,7 +33,7 @@ public class Material {
     private Date lastDate;
 
     @ManyToOne
-    private MaterialType materilalType;
+    private MaterialType materialType;
 
     @ManyToOne
     private User user;
@@ -147,16 +147,31 @@ public class Material {
         this.user = user;
     }
 
-    public MaterialType getMaterilalType() {
-        return materilalType;
-    }
-
     public void setMaterilalType(MaterialType materilalType) {
-        this.materilalType = materilalType;
+        this.materialType = materilalType;
     }
 
     public String getFullName() {
-        return generateFullName();
+        return fullName;
     }
 
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public MaterialType getMaterialType() {
+        return materialType;
+    }
+
+    public void setMaterialType(MaterialType materialType) {
+        this.materialType = materialType;
+    }
+
+    public Date getLastDate() {
+        return lastDate;
+    }
+
+    public void setLastDate(Date lastDate) {
+        this.lastDate = lastDate;
+    }
 }

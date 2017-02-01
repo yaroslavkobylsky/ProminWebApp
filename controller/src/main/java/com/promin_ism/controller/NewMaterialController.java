@@ -3,6 +3,7 @@ package com.promin_ism.controller;
 import com.promin_ism.dao.DatabaseException;
 import com.promin_ism.model.Material;
 import com.promin_ism.model.MaterialType;
+import com.promin_ism.model.User;
 import com.promin_ism.service.MaterialService;
 import com.promin_ism.service.MaterialTypeService;
 import org.apache.log4j.Logger;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -40,7 +42,8 @@ public class NewMaterialController {
             String materialDimensions,
             String materialGOST,
             String materialSort,
-            Integer materialType){
+            Integer materialType,
+            HttpSession httpSession){
         LOGGER.debug("new material post method");
         Material material = new Material();
         LOGGER.debug("material name: " + materialName);
@@ -53,6 +56,7 @@ public class NewMaterialController {
             if (materialType != null && !materialType.equals(new Integer(-1))){
                 material.setMaterilalType(materialTypeService.read(new Long(materialType)));
             }
+            material.setUser((User) httpSession.getAttribute("user"));
             Long id = materialService.create(material);
             LOGGER.debug("new material created with id: " + id);
         } catch (DatabaseException e) {

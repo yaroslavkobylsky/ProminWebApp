@@ -28,6 +28,7 @@
     </definition>
 
     <definition name="home" extends="baseLayout">
+        <put-attribute name="title" value="Main page"/>
         <put-attribute name="body" value="/WEB-INF/pages/index.jsp"/>
     </definition>
 
@@ -42,6 +43,19 @@
     <definition name="materialViewAll" extends="baseLayout">
         <put-attribute name="title" value="View all materials"/>
         <put-attribute name="body" value="/WEB-INF/pages/materials/viewAll.jsp"/>
+    </definition>
+
+    <definition name="materialView" extends="baseLayout">
+        <put-attribute name="title" value="View material"/>
+        <put-attribute name="body" value="/WEB-INF/pages/materials/view.jsp"/>
+    </definition>
+
+    <definition name="materialEdit" extends="baseLayout">
+        <put-attribute name="title" value="Edit material"/>
+        <put-attribute name="body" value="/WEB-INF/pages/materials/edit.jsp"/>
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/newMaterial.js"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="partsViewAll" extends="baseLayout">

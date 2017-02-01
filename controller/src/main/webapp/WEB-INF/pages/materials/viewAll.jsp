@@ -23,22 +23,22 @@
                 <th>GOST</th>
                 <th>Sort</th>
                 <th>Type</th>
-                <%--<th>Modified</th>--%>
+                <th>Modified</th>
                 <th>User</th>
             </tr>
             </thead>
 
             <tbody>
-            <c:forEach var="assembly" items="${materials}">
+            <c:forEach var="material" items="${materials}">
                 <tr>
-                    <td>${assembly.id}</td>
-                    <td>${assembly.name}</td>
-                    <td>${assembly.dimensions}</td>
-                    <td>${assembly.gost}</td>
-                    <td>${assembly.sort}</td>
-                    <td>${assembly.materilalType.name}</td>
-                        <%--<td>${material.lastDate}</td>--%>
-                    <td>${assembly.user.name}</td>
+                    <td>${material.id}</td>
+                    <td><a href="/materials/view?id=${material.id}">${material.name}</a></td>
+                    <td>${material.dimensions}</td>
+                    <td>${material.gost}</td>
+                    <td>${material.sort}</td>
+                    <td>${material.materialType.name}</td>
+                    <td>${material.lastDate}</td>
+                    <td>${material.user.name}</td>
                 </tr>
             </c:forEach>
             </tbody>
