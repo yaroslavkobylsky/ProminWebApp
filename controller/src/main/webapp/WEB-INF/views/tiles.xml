@@ -11,6 +11,7 @@
             <add-attribute value="/js/jAlert.js"/>
             <add-attribute value="/js/jAlert-functions.js"/>
             <add-attribute value="/js/messagebox.js"/>
+            <add-attribute value="/js/util.js"/>
         </put-list-attribute>
         <put-list-attribute name="stylesheets">
             <add-attribute value="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
@@ -77,6 +78,11 @@
         <put-attribute name="body" value="/WEB-INF/pages/standardParts/viewAll.jsp"/>
     </definition>
 
+    <definition name="standardPartsView" extends="baseLayout">
+        <put-attribute name="title" value="View standard part"/>
+        <put-attribute name="body" value="/WEB-INF/pages/standardParts/view.jsp"/>
+    </definition>
+
     <definition name="standardPartsNew" extends="baseLayout">
         <put-attribute name="title" value="Add new standard part"/>
         <put-attribute name="body" value="/WEB-INF/pages/standardParts/new.jsp"/>
@@ -85,12 +91,20 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="standardPartsEdit" extends="baseLayout">
+        <put-attribute name="title" value="Edit standard part"/>
+        <put-attribute name="body" value="/WEB-INF/pages/standardParts/edit.jsp"/>
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/newStandPart.js"/>
+            <add-attribute value="/js/editStandPart.js"/>
+        </put-list-attribute>
+    </definition>
+
     <definition name="assemblyEdit" extends="baseLayout">
         <put-attribute name="title" value="Edit assembly"/>
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/edit.jsp"/>
         <put-list-attribute name="javascripts" inherit="true">
             <add-attribute value="/js/editAssembly.js"/>
-            <add-attribute value="/js/util.js"/>
         </put-list-attribute>
     </definition>
 

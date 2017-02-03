@@ -79,7 +79,7 @@
             </div>
             <div class="col-sm-3"></div>
             <div class="col-sm-4">
-                <a href="/parts/viewAll" role="button" class="btn btn-warning">Cancel</a>
+                <a href="/standardParts/viewAll" role="button" class="btn btn-warning">Cancel</a>
             </div>
         </div>
         <div class="col-sm-3"></div>

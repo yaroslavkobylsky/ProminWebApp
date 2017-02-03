@@ -38,6 +38,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditStandardPartController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/HotKeyTest.java">
           <value>
             <set />
@@ -98,6 +103,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewStandardPartController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/config/AppConfig.java">
           <value>
             <set />
@@ -139,6 +149,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/db.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/EditStandPart.js">
           <value>
             <set />
           </value>

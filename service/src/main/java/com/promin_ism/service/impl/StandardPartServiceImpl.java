@@ -39,4 +39,8 @@ public class StandardPartServiceImpl implements StandardPartService {
     public boolean isNameUnique(String name) throws DatabaseException {
         return standardPartDao.isNameUnique(name);
     }
+
+    public boolean isNameUniqueWhileEdit(String name, Long id) throws DatabaseException {
+        return standardPartDao.isNameUniqueWhileEdit(name, id);
+    }
 }

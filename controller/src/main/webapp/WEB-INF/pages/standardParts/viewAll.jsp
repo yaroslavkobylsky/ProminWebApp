@@ -31,7 +31,7 @@
             <c:forEach var="standardPart" items="${standardParts}">
                 <tr>
                     <td>${standardPart.id}</td>
-                    <td>${standardPart.name}</td>
+                    <td><a href="/standardParts/view?id=${standardPart.id}">${standardPart.name}</a></td>
                     <td>${standardPart.gost}</td>
                     <td>${standardPart.weight}</td>
                     <td>${standardPart.additionalInfo}</td>

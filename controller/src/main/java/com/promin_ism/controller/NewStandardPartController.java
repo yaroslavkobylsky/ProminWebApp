@@ -2,6 +2,7 @@ package com.promin_ism.controller;
 
 import com.promin_ism.dao.DatabaseException;
 import com.promin_ism.model.StandardPart;
+import com.promin_ism.model.User;
 import com.promin_ism.service.StandardPartService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.Date;
@@ -32,21 +34,21 @@ public class NewStandardPartController {
     public String saveStandardPart(String standardPartName,
                                          String gost,
                                          BigDecimal weight,
-                                         String additionalInfo) {
+                                         String additionalInfo,
+                                         HttpSession httpSession) {
         StandardPart standardPart = new StandardPart();
-        standardPart.setName(standardPartName);
-        standardPart.setGost(gost);
-        standardPart.setAdditionalInfo(additionalInfo);
+        standardPart.setName(standardPartName.trim());
+        standardPart.setGost(gost.trim());
+        standardPart.setAdditionalInfo(additionalInfo.trim());
         standardPart.setWeight(weight);
         standardPart.setLastDate(new Date());
-
+        standardPart.setUser((User) httpSession.getAttribute("user"));
         try {
             Long id = standardPartService.create(standardPart);
             LOGGER.debug("standard part was saved with id: " + id);
         } catch (DatabaseException e) {
             LOGGER.error(standardPart);
         }
-
         return "redirect:viewAll";
     }
 

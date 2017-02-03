@@ -43,4 +43,27 @@ public class StandardPartDaoImpl extends GenericDaoCRUD<StandardPart> implements
             throw new DatabaseException(e.getMessage());
         }
     }
+
+    public boolean isNameUniqueWhileEdit(String name, Long id) throws DatabaseException {
+        try {
+            LOGGER.debug("checking is name unique");
+            List<StandardPart> standardParts = getSessionFactory().getCurrentSession().createCriteria(StandardPart.class)
+                    .add(Restrictions.eq("name", name.trim()))
+                    .add(Restrictions.not(Restrictions.eq("id", id)))
+                    .list();
+
+            if (standardParts.size() > 0){
+                LOGGER.debug("name is not unique in edit: " + name);
+                return false;
+            }
+            else {
+                LOGGER.debug("name is unique in edit: " + name);
+                return true;
+            }
+        }
+        catch (HibernateException e){
+            LOGGER.error(e.getMessage());
+            throw new DatabaseException(e.getMessage());
+        }
+    }
 }

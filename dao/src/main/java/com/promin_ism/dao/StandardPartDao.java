@@ -12,4 +12,5 @@ public interface StandardPartDao {
     List<StandardPart> findAll() throws DatabaseException;
 
     boolean isNameUnique(String name) throws DatabaseException;
+    boolean isNameUniqueWhileEdit(String name, Long id) throws DatabaseException;
 }
