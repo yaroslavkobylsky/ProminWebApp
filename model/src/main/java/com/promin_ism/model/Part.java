@@ -35,7 +35,7 @@ public class Part {
     @Column(name = "lastDate")
     private Date lastDate;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<ProductionMethod> productionMethods;
 
     @ManyToOne
@@ -77,10 +77,6 @@ public class Part {
         }
     }
 
-    public Part() {
-        this.lastDate = new Date();
-    }
-
     public Long getId() {
         return id;
     }
@@ -95,6 +91,14 @@ public class Part {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescName() {
+        return descName;
+    }
+
+    public void setDescName(String descName) {
+        this.descName = descName;
     }
 
     public Material getMaterial() {
@@ -117,8 +121,8 @@ public class Part {
         return isPurchased;
     }
 
-    public void setIsPurchased(Boolean isPurchased) {
-        this.isPurchased = isPurchased;
+    public void setIsPurchased(Boolean purchased) {
+        isPurchased = purchased;
     }
 
     public Date getLastDate() {
@@ -129,35 +133,19 @@ public class Part {
         this.lastDate = lastDate;
     }
 
+    public List<ProductionMethod> getProductionMethods() {
+        return productionMethods;
+    }
+
+    public void setProductionMethods(List<ProductionMethod> productionMethods) {
+        this.productionMethods = productionMethods;
+    }
+
     public User getUser() {
         return user;
     }
 
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public String getDescName() {
-        return descName;
-    }
-
-    public void setDescName(String descName) {
-        this.descName = descName;
-    }
-
-    public Boolean getPurchased() {
-        return isPurchased;
-    }
-
-    public void setPurchased(Boolean purchased) {
-        isPurchased = purchased;
-    }
-
-    public List<ProductionMethod> getProductionMethod() {
-        return productionMethods;
-    }
-
-    public void setProductionMethod(List<ProductionMethod> productionMethods) {
-        this.productionMethods = productionMethods;
     }
 }

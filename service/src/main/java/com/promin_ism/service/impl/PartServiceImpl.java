@@ -40,4 +40,8 @@ public class PartServiceImpl implements PartService {
     public boolean isNameUnique(String name) throws DatabaseException {
         return partDao.isNameUnique(name);
     }
+
+    public boolean isNameUniqueInEdit(String name, Long id) throws DatabaseException {
+        return partDao.isNameUniqueInEdit(name, id);
+    }
 }

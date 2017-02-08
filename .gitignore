@@ -57,3 +57,6 @@ fabric.properties
 
 
 
+controller/target/controller.war
+.idea/sonarIssues.xml
+.idea/workspace.xml

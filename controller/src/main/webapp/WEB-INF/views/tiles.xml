@@ -64,6 +64,21 @@
         <put-attribute name="body" value="/WEB-INF/pages/parts/viewAll.jsp"/>
     </definition>
 
+    <definition name="partsView" extends="baseLayout">
+        <put-attribute name="title" value="View part"/>
+        <put-attribute name="body" value="/WEB-INF/pages/parts/view.jsp"/>
+    </definition>
+
+    <definition name="partsEdit" extends="baseLayout">
+        <put-attribute name="title" value="Edit part"/>
+        <put-attribute name="body" value="/WEB-INF/pages/parts/edit.jsp"/>
+        <put-list-attribute name="javascripts" inherit="true">
+            <add-attribute value="/js/newPart.js"/>
+            <add-attribute value="/js/editPart.js"/>
+            <add-attribute value="/js/newPartAddProductionMethod.js"/>
+        </put-list-attribute>
+    </definition>
+
     <definition name="partsNew" extends="baseLayout">
         <put-attribute name="title" value="Add new part"/>
         <put-attribute name="body" value="/WEB-INF/pages/parts/new.jsp"/>

@@ -4,6 +4,7 @@ import com.promin_ism.dao.DatabaseException;
 import com.promin_ism.model.Material;
 import com.promin_ism.model.Part;
 import com.promin_ism.model.ProductionMethod;
+import com.promin_ism.model.User;
 import com.promin_ism.service.MaterialService;
 import com.promin_ism.service.PartService;
 import com.promin_ism.service.ProductionMethodService;
@@ -18,16 +19,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class NewPartController {
     private static final Logger LOGGER = Logger.getLogger(NewPartController.class);
-    private static final String METHOD = "method";
+    public static final String METHOD = "method";
 
     @Autowired
     private PartService partService;
@@ -50,7 +49,8 @@ public class NewPartController {
                            BigDecimal partMaterialNormWeight,
                            Boolean isPurchased,
                            Long material,
-                           WebRequest request){
+                           WebRequest request,
+                           HttpSession httpSession){
         Part part = new Part();
         part.setName(partName);
         part.setDescName(partDescName);
@@ -70,7 +70,9 @@ public class NewPartController {
                     productionMethods.add(productionMethodService.read(productionMethodId));
                 }
             }
-            part.setProductionMethod(productionMethods);
+            part.setProductionMethods(productionMethods);
+            part.setUser((User) httpSession.getAttribute("user"));
+            part.setLastDate(new Date());
             Long newId = partService.create(part);
             LOGGER.debug("new part id: " + newId);
             LOGGER.debug("part: " + part.toString());

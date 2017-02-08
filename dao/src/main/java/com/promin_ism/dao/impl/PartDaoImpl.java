@@ -48,4 +48,27 @@ public class PartDaoImpl extends GenericDaoCRUD<Part> implements PartDao {
             throw new DatabaseException(e.getMessage());
         }
     }
+
+    public boolean isNameUniqueInEdit(String name, Long id) throws DatabaseException {
+        try {
+            LOGGER.debug("checking is name unique");
+            List<Part> parts = getSessionFactory().getCurrentSession().createCriteria(Part.class)
+                    .add(Restrictions.eq("name", name.trim()))
+                    .add(Restrictions.not(Restrictions.eq("id", id)))
+                    .list();
+
+            if (parts.size() > 0){
+                LOGGER.debug("name is not unique: " + name);
+                return false;
+            }
+            else {
+                LOGGER.debug("name is unique: " + name);
+                return true;
+            }
+        }
+        catch (HibernateException e){
+            LOGGER.error(e.getMessage());
+            throw new DatabaseException(e.getMessage());
+        }
+    }
 }

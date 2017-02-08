@@ -21,6 +21,7 @@
                 <th>Material</th>
                 <th>Is purchased</th>
                 <th>Modified</th>
+                <th>User</th>
             </tr>
             </thead>
 
@@ -28,9 +29,9 @@
             <c:forEach var="part" items="${parts}">
                 <tr>
                     <td>${part.id}</td>
-                    <td>${part.name}</td>
+                    <td><a href="/parts/view?id=${part.id}">${part.name}</a></td>
                     <td>${part.descName}</td>
-                    <td>${part.material.fullName}</td>
+                    <td>${part.material.name} ${part.material.dimensions}</td>
                     <td>
                         <input type="checkbox" <c:choose>
                         <c:when test="${part.isPurchased =='true'}"> checked </c:when>
@@ -38,6 +39,7 @@
                                disabled>
                     </td>
                     <td>${part.lastDate}</td>
+                    <td>${part.user.name}</td>
                 </tr>
             </c:forEach>
 
