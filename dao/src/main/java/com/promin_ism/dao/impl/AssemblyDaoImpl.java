@@ -5,6 +5,7 @@ import com.promin_ism.dao.DatabaseException;
 import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.model.Assembly;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
@@ -45,6 +46,7 @@ public class AssemblyDaoImpl extends GenericDaoCRUD<Assembly> implements Assembl
             LOGGER.debug("checking is name unique");
             assemblies = getSessionFactory().getCurrentSession().createCriteria(Assembly.class)
                     .add(Restrictions.eq("name", name.trim()))
+                    .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                     .list();
 
             return assemblies;

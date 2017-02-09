@@ -5,6 +5,7 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.StandardPartDao;
 import com.promin_ism.model.StandardPart;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
@@ -50,6 +51,7 @@ public class StandardPartDaoImpl extends GenericDaoCRUD<StandardPart> implements
             List<StandardPart> standardParts = getSessionFactory().getCurrentSession().createCriteria(StandardPart.class)
                     .add(Restrictions.eq("name", name.trim()))
                     .add(Restrictions.not(Restrictions.eq("id", id)))
+                    .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                     .list();
 
             if (standardParts.size() > 0){

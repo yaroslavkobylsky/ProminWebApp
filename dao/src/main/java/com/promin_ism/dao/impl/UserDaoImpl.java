@@ -5,6 +5,7 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.UserDao;
 import com.promin_ism.model.User;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
@@ -33,6 +34,7 @@ public class UserDaoImpl extends GenericDaoCRUD<User> implements UserDao {
             return (User)getSessionFactory().getCurrentSession().createCriteria(User.class)
                     .add(Restrictions.eq("login",login))
                     .add(Restrictions.eq("password", password))
+                    .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                     .uniqueResult();
         }
         catch (HibernateException e){

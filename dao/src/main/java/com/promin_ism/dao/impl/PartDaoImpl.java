@@ -5,6 +5,7 @@ import com.promin_ism.dao.GenericDaoCRUD;
 import com.promin_ism.dao.PartDao;
 import com.promin_ism.model.Part;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
@@ -32,6 +33,7 @@ public class PartDaoImpl extends GenericDaoCRUD<Part> implements PartDao {
             LOGGER.debug("checking is name unique");
             List<Part> parts = getSessionFactory().getCurrentSession().createCriteria(Part.class)
                     .add(Restrictions.eq("name", name.trim()))
+                    .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                     .list();
 
             if (parts.size() > 0){
@@ -55,6 +57,7 @@ public class PartDaoImpl extends GenericDaoCRUD<Part> implements PartDao {
             List<Part> parts = getSessionFactory().getCurrentSession().createCriteria(Part.class)
                     .add(Restrictions.eq("name", name.trim()))
                     .add(Restrictions.not(Restrictions.eq("id", id)))
+                    .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                     .list();
 
             if (parts.size() > 0){
