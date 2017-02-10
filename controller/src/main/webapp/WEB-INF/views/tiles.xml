@@ -123,6 +123,11 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="assemblyView" extends="baseLayout">
+        <put-attribute name="title" value="View assembly"/>
+        <put-attribute name="body" value="/WEB-INF/pages/assemblies/view.jsp"/>
+    </definition>
+
     <definition name="assemblyViewAll" extends="baseLayout">
         <put-attribute name="title" value="View all assemblies"/>
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/viewAll.jsp"/>
