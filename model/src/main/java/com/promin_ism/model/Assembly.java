@@ -2,12 +2,17 @@ package com.promin_ism.model;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
+import com.promin_ism.model.AssemblyUtility.CadSpecification;
+import com.promin_ism.model.AssemblyUtility.CadSpecificationEntry;
+import com.promin_ism.model.Comparators.AssemblyLongEntryComparator;
+import com.promin_ism.model.Comparators.MaterialBigDecimalEntryComparator;
+import com.promin_ism.model.Comparators.PartLongEntryComparator;
+import com.promin_ism.model.Comparators.StandardPartLongEntryComparator;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.math.MathContext;
+import java.util.*;
 
 @Entity
 @Table(name = "assembly")
@@ -61,6 +66,98 @@ public class Assembly {
 
     @ManyToOne
     private User user;
+
+    public CadSpecification getCadSpecification(){
+        List<CadSpecificationEntry> list = new ArrayList<>();
+        CadSpecificationEntry emptyEntry = new CadSpecificationEntry();
+        Long position = new Long(1);
+
+
+        if (assemblies.size() > 0) {
+            CadSpecificationEntry assemblyHeader = new CadSpecificationEntry();
+            assemblyHeader.setDescName("Assemblies");
+            list.add(assemblyHeader);
+            list.add(emptyEntry);
+
+            List<Map.Entry<Assembly, Long>> assemblyQuantity = new ArrayList<>(assemblies.entrySet());
+            Collections.sort(assemblyQuantity, new AssemblyLongEntryComparator());
+
+            /*adding assemblies to specification*/
+            for (Map.Entry<Assembly, Long> entry : assemblyQuantity) {
+                CadSpecificationEntry cadSpecificationEntry = new CadSpecificationEntry();
+                cadSpecificationEntry.setName(entry.getKey().getName());
+                cadSpecificationEntry.setDescName(entry.getKey().getDescName());
+                cadSpecificationEntry.setNumberOf(new BigDecimal(entry.getValue()));
+                cadSpecificationEntry.setPosition(position);
+                list.add(cadSpecificationEntry);
+                position++;
+            }
+        }
+
+        list.add(emptyEntry);
+
+        if(this.parts.size()>0){
+            CadSpecificationEntry partsHeader = new CadSpecificationEntry();
+            partsHeader.setDescName("Parts");
+            list.add(partsHeader);
+            list.add(emptyEntry);
+            List<Map.Entry<Part, Long>> partLongEntries = new ArrayList<>(parts.entrySet());
+            Collections.sort(partLongEntries, new PartLongEntryComparator());
+            for (Map.Entry<Part, Long> partLongEntry : partLongEntries){
+                CadSpecificationEntry assemblyCadSpecificationEntry = new CadSpecificationEntry();
+                assemblyCadSpecificationEntry.setName(partLongEntry.getKey().getName());
+                assemblyCadSpecificationEntry.setDescName(partLongEntry.getKey().getDescName());
+                assemblyCadSpecificationEntry.setNumberOf(new BigDecimal(partLongEntry.getValue()));
+                assemblyCadSpecificationEntry.setPosition(position);
+                list.add(assemblyCadSpecificationEntry);
+                position++;
+            }
+            list.add(emptyEntry);
+        }
+
+        if(this.standardParts.size()>0){
+            CadSpecificationEntry standartPartHeader = new CadSpecificationEntry();
+            standartPartHeader.setDescName("Standard parts");
+            list.add(standartPartHeader);
+            list.add(emptyEntry);
+            List<Map.Entry<StandardPart, Long>> standardPartLongEntries = new ArrayList<>(standardParts.entrySet());
+            Collections.sort(standardPartLongEntries, new StandardPartLongEntryComparator());
+            for (Map.Entry<StandardPart, Long> standartPartLongEntry : standardPartLongEntries){
+                CadSpecificationEntry assemblyCadSpecificationEntry = new CadSpecificationEntry();
+                assemblyCadSpecificationEntry.setName(standartPartLongEntry.getKey().getName());
+                assemblyCadSpecificationEntry.setDescName(standartPartLongEntry.getKey().getGost());
+                assemblyCadSpecificationEntry.setNumberOf(new BigDecimal(standartPartLongEntry.getValue()));
+                assemblyCadSpecificationEntry.setPosition(position);
+                list.add(assemblyCadSpecificationEntry);
+                position++;
+            }
+            list.add(emptyEntry);
+        }
+
+        if(this.materials.size()>0){
+            CadSpecificationEntry materialsHeader = new CadSpecificationEntry();
+            materialsHeader.setDescName("Materials");
+            list.add(materialsHeader);
+            list.add(emptyEntry);
+            List<Map.Entry<Material, BigDecimal>> materialsBigDecimalEntries = new ArrayList<>(materials.entrySet());
+            Collections.sort(materialsBigDecimalEntries, new MaterialBigDecimalEntryComparator());
+            for (Map.Entry<Material, BigDecimal> materialBigDecimalEntry : materialsBigDecimalEntries){
+                CadSpecificationEntry assemblyCadSpecificationEntry = new CadSpecificationEntry();
+                assemblyCadSpecificationEntry.setName(materialBigDecimalEntry.getKey().getName() + " " +
+                        materialBigDecimalEntry.getKey().getDimensions() + " " +
+                        materialBigDecimalEntry.getKey().getGost());
+                BigDecimal quantity = new BigDecimal(materialBigDecimalEntry.getValue().doubleValue()).setScale(2, BigDecimal.ROUND_HALF_UP);
+                assemblyCadSpecificationEntry.setNumberOf(quantity);
+                assemblyCadSpecificationEntry.setPosition(position);
+                list.add(assemblyCadSpecificationEntry);
+                position++;
+            }
+            list.add(emptyEntry);
+        }
+
+        return new CadSpecification(this, list);
+    }
+
 
     @Override
     public int hashCode() {

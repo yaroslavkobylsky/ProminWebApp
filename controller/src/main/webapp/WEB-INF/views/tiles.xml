@@ -136,6 +136,14 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="getCadSpecification" extends="baseLayout">
+        <put-attribute name="title" value="Cad specification"/>
+        <put-attribute name="body" value="/WEB-INF/pages/assemblies/cadSpecification.jsp"/>
+    </definition>
+
+    <definition name="errorPage" template="//WEB-INF/pages/errorPage.jsp">
+    </definition>
+
     <definition name="login" template="//WEB-INF/pages/login.jsp">
         <put-attribute name="title" value="Login"/>
         <put-list-attribute name="javascripts">

@@ -33,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/CadSpecificationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/EditAssemblyController.java">
           <value>
             <set />
@@ -219,6 +224,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/viewAllAssemblies.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/cadSpecification.jsp">
           <value>
             <set />
           </value>
@@ -599,6 +609,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/AssemblyUtility/CadSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/AssemblyUtility/CadSpecificationEntry.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Comparators/AssemblyLongEntryComparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Comparators/MaterialBigDecimalEntryComparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Comparators/PartLongEntryComparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Comparators/StandardPartLongEntryComparator.java">
           <value>
             <set />
           </value>

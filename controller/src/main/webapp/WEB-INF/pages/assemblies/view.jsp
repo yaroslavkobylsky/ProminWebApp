@@ -11,8 +11,20 @@
         </div>
     </div>
 </div>
+
 <br/>
 
+<div class="row">
+    <div class="col-sm-4">
+        <a href="/assemblies/getCadSpecification?id=${assembly.id}">Cad specification</a>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+
+</div>
+
+<br>
 
 <div class="row">
 
