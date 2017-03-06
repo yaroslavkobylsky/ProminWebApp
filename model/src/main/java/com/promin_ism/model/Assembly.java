@@ -11,7 +11,6 @@ import com.promin_ism.model.Comparators.StandardPartLongEntryComparator;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.util.*;
 
 @Entity
@@ -66,6 +65,44 @@ public class Assembly {
 
     @ManyToOne
     private User user;
+
+    public Map<Part, Long> getListOfPurchasedParts(){
+        Map<Part, Long> listOfPurchasedParts = new HashMap<>();
+
+        List<Map.Entry<Assembly, Long>> listOfAssemblies = new ArrayList<>(assemblies.entrySet());
+        for (Map.Entry<Assembly, Long> assembly : listOfAssemblies){
+            Map<Part, Long> list = assembly.getKey().getListOfPurchasedParts();
+            List<Map.Entry<Part, Long>> partLongList = new ArrayList<>(list.entrySet());
+            for (Map.Entry<Part, Long> part : partLongList){
+                Long quantity = part.getValue() * assembly.getValue();
+                if (listOfPurchasedParts.containsKey(part.getKey())){
+                    quantity = quantity + listOfPurchasedParts.get(part.getKey());
+                    listOfPurchasedParts.remove(part.getKey());
+                    listOfPurchasedParts.put(part.getKey(), quantity);
+                }
+                else {
+                    listOfPurchasedParts.put(part.getKey(), quantity);
+                }
+            }
+        }
+
+        List<Map.Entry<Part, Long>> partsList = new ArrayList<>(parts.entrySet());
+
+        for (Map.Entry<Part, Long> part : partsList){
+            if(part.getKey().getIsPurchased() != null && part.getKey().getIsPurchased()){
+                Long quantity = part.getValue();
+                if (listOfPurchasedParts.containsKey(part.getKey())){
+                    quantity = quantity + listOfPurchasedParts.get(part.getKey());
+                    listOfPurchasedParts.remove(part.getKey());
+                    listOfPurchasedParts.put(part.getKey(), quantity);
+                }
+                else {
+                    listOfPurchasedParts.put(part.getKey(), quantity);
+                }
+            }
+        }
+        return listOfPurchasedParts;
+    }
 
     public CadSpecification getCadSpecification(){
         List<CadSpecificationEntry> list = new ArrayList<>();

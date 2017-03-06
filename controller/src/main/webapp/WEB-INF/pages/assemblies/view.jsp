@@ -15,10 +15,12 @@
 <br/>
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <a href="/assemblies/getCadSpecification?id=${assembly.id}">Cad specification</a>
     </div>
-    <div class="col-sm-4"></div>
+    <div class="col-sm-5">
+        <a href="/assemblies/getListOfPurchasedParts?id=${assembly.id}">List of purchased parts</a>
+    </div>
     <div class="col-sm-4"></div>
 
 
