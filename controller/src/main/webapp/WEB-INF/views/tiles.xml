@@ -146,6 +146,11 @@
         <put-attribute name="body" value="/WEB-INF/pages/assemblies/listOfPurchasedParts.jsp"/>
     </definition>
 
+    <definition name="getBillOfMaterials" extends="baseLayout">
+        <put-attribute name="title" value="Bill of materials"/>
+        <put-attribute name="body" value="/WEB-INF/pages/assemblies/billOfMaterials.jsp"/>
+    </definition>
+
     <definition name="errorPage" template="//WEB-INF/pages/errorPage.jsp">
     </definition>
 

@@ -33,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/BillOfMaterialsController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/CadSpecificationController.java">
           <value>
             <set />
@@ -229,6 +234,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/viewAllAssemblies.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/assemblies/billOfMaterials.jsp">
           <value>
             <set />
           </value>
@@ -619,6 +629,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/Assembly.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/AssemblyUtility/BillOfMaterials.java">
           <value>
             <set />
           </value>

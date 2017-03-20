@@ -21,7 +21,9 @@
     <div class="col-sm-5">
         <a href="/assemblies/getListOfPurchasedParts?id=${assembly.id}">List of purchased parts</a>
     </div>
-    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <a href="/assemblies/getBillOfMaterials?id=${assembly.id}">Bill of materials</a>
+    </div>
 
 
 </div>

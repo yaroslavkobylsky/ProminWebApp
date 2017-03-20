@@ -195,6 +195,71 @@ public class Assembly {
         return new CadSpecification(this, list);
     }
 
+    public Map<Material, BigDecimal> getBillOfMaterials(){
+        Map<Material, BigDecimal> result = new HashMap<>();
+
+        if (assemblies != null){
+            for(Map.Entry<Assembly, Long> assemblyLongEntry: assemblies.entrySet()){
+                Map<Material, BigDecimal> tempBillOfMaterials = assemblyLongEntry.getKey().getBillOfMaterials();
+                for (Map.Entry<Material, BigDecimal> materialBigDecimalEntry : tempBillOfMaterials.entrySet()){
+                    materialBigDecimalEntry.setValue(new BigDecimal(assemblyLongEntry.getValue().longValue() *
+                            materialBigDecimalEntry.getValue().floatValue()));
+                }
+                result = addMaps(result, tempBillOfMaterials);
+            }
+        }
+
+        if(parts != null){
+            for (Map.Entry<Part, Long> partLongEntry : parts.entrySet()){
+                if (partLongEntry.getKey().getIsPurchased() != null && partLongEntry.getKey().getIsPurchased()){
+                    continue;
+                }
+                if (result.containsKey(partLongEntry.getKey().getMaterial())){
+                    BigDecimal materialQuantity = result.get(partLongEntry.getKey().getMaterial());
+                    result.remove(partLongEntry.getKey().getMaterial());
+                    materialQuantity = new BigDecimal(materialQuantity.doubleValue() + partLongEntry.getKey()
+                            .getMaterialNormWeight().doubleValue() * partLongEntry.getValue().longValue());
+                    result.put(partLongEntry.getKey().getMaterial(), materialQuantity);
+                }
+                else {
+                    result.put(partLongEntry.getKey().getMaterial(), new BigDecimal(partLongEntry.getKey()
+                            .getMaterialNormWeight().doubleValue() * partLongEntry.getValue().longValue() ));
+                }
+            }
+        }
+
+        if (materials != null){
+            for (Map.Entry<Material, BigDecimal> materialBigDecimalEntry : materials.entrySet()){
+                if (result.containsKey(materialBigDecimalEntry.getKey())){
+                    BigDecimal materialQuantity = result.get(materialBigDecimalEntry.getKey());
+                    result.remove(materialBigDecimalEntry.getKey());
+                    materialQuantity = new BigDecimal(materialQuantity.doubleValue() +
+                            materialBigDecimalEntry.getValue().longValue());
+                    result.put(materialBigDecimalEntry.getKey(), materialQuantity);
+                }
+                else {
+                    result.put(materialBigDecimalEntry.getKey(),
+                            new BigDecimal(materialBigDecimalEntry.getValue().longValue()));
+                }
+            }
+        }
+        return result;
+    }
+
+    private Map<Material, BigDecimal> addMaps(Map<Material, BigDecimal> baseMap, Map<Material, BigDecimal> addedMap){
+        for (Map.Entry<Material, BigDecimal> addingEntry : addedMap.entrySet()){
+            if (baseMap.containsKey(addingEntry.getKey())){
+                BigDecimal materialQuantity = baseMap.get(addingEntry.getKey());
+                baseMap.remove(addingEntry.getKey());
+                materialQuantity = new BigDecimal(materialQuantity.doubleValue() + addingEntry.getValue().doubleValue());
+                baseMap.put(addingEntry.getKey(), materialQuantity);
+            }
+            else {
+                baseMap.put(addingEntry.getKey(), addingEntry.getValue());
+            }
+        }
+        return baseMap;
+    }
 
     @Override
     public int hashCode() {
