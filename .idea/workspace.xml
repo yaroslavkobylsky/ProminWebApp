@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d0d3b7-ddef-4706-be17-e01de0fbd246" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/target/controller/WEB-INF/test.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/target/controller/index.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/view.jsp" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/viewAll.jsp" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/viewAll.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/target/controller.war" afterPath="$PROJECT_DIR$/controller/target/controller.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/controller.iml" afterPath="$PROJECT_DIR$/controller/controller.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/pom.xml" afterPath="$PROJECT_DIR$/controller/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promin.iml" afterPath="$PROJECT_DIR$/promin.iml" />
     </list>
     <ignored path="test2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,38 +37,7 @@
     <favorites_list name="test2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="47.076923">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6923077">
-              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/view.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4012442">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,8 +46,8 @@
         <option value="CSS File" />
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,9 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/NewMaterialController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/viewAll.jsp" />
-        <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/materials/view.jsp" />
         <option value="$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/StandardPart.java" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/standardParts/view.jsp" />
         <option value="$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewStandardPartController.java" />
@@ -141,6 +110,9 @@
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/viewAll.jsp" />
         <option value="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp" />
+        <option value="$PROJECT_DIR$/controller/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/controller/src/test/com/ism_promin/controller/MainPageTest.java" />
       </list>
     </option>
   </component>
@@ -257,6 +229,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +264,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProminWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,15 +483,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,82 +510,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,46 +540,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -647,26 +556,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProminWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -682,7 +572,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.443038" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -713,7 +603,7 @@
       <recent name="C:\Users\Yar\IdeaProjects\test2\dao\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.TomCat">
+  <component name="RunManager" selected="JUnit.MainPageTest.testDirver">
     <configuration default="false" name="Assembly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -732,32 +622,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="model" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MaterialDBUnitTestCase.testFindAllMaterials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dao" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.MaterialDBUnitTestCase" />
-      <option name="METHOD_NAME" value="testFindAllMaterials" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="UserDBUnitTestCase.testReadUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -786,32 +650,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UserDBUnitTestCase.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.promin_ism.dao.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dao" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.UserDBUnitTestCase" />
-      <option name="METHOD_NAME" value="testUpdateUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="UserDBUnitTestCase.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -825,6 +663,58 @@
       <option name="PACKAGE_NAME" value="com.promin_ism.dao.integration" />
       <option name="MAIN_CLASS_NAME" value="com.promin_ism.dao.integration.UserDBUnitTestCase" />
       <option name="METHOD_NAME" value="findAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainPageTest.testPageAvailability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ism_promin.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="controller" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ism_promin.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ism_promin.controller.MainPageTest" />
+      <option name="METHOD_NAME" value="testPageAvailability" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainPageTest.testDirver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ism_promin.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="controller" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ism_promin.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ism_promin.controller.MainPageTest" />
+      <option name="METHOD_NAME" value="testDirver" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1370,18 +1260,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TomCat" />
       <item index="1" class="java.lang.String" itemvalue="Application.Assembly" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testFindAllMaterials" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testReadUser" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testUpdateUser" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testReadUser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MainPageTest.testPageAvailability" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MainPageTest.testDirver" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Assembly" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testReadUser" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testUpdateUser" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MaterialDBUnitTestCase.testFindAllMaterials" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MainPageTest.testDirver" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainPageTest.testPageAvailability" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Assembly" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.testReadUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserDBUnitTestCase.findAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -1517,33 +1407,36 @@
       <workItem from="1489860307667" duration="4885000" />
       <workItem from="1490038323432" duration="1528000" />
       <workItem from="1490041786029" duration="5941000" />
+      <workItem from="1490204830976" duration="5090000" />
+      <workItem from="1490898582515" duration="2282000" />
+      <workItem from="1491072752405" duration="1965000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDBUnitTestCase_findAllUsers - 2016.11.02 at 20h 54m 24s.xml">
-      <configuration name="UserDBUnitTestCase.findAllUsers" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testDirver - 2017.04.01 at 22h 16m 58s.xml">
+      <configuration name="MainPageTest.testDirver" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_findAllUsers - 2016.11.09 at 21h 45m 01s.xml">
-      <configuration name="UserDBUnitTestCase.findAllUsers" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testDirver - 2017.04.01 at 22h 23m 01s.xml">
+      <configuration name="MainPageTest.testDirver" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testReadUser - 2016.11.04 at 21h 33m 37s.xml">
-      <configuration name="UserDBUnitTestCase.testReadUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testDirver - 2017.04.01 at 22h 27m 38s.xml">
+      <configuration name="MainPageTest.testDirver" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testReadUser - 2016.11.08 at 21h 27m 06s.xml">
-      <configuration name="UserDBUnitTestCase.testReadUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testPageAvailability - 2017.03.30 at 21h 37m 44s.xml">
+      <configuration name="MainPageTest.testPageAvailability" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testReadUser - 2016.11.09 at 21h 45m 19s.xml">
-      <configuration name="UserDBUnitTestCase.testReadUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testPageAvailability - 2017.04.01 at 22h 05m 00s.xml">
+      <configuration name="MainPageTest.testPageAvailability" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testUpdateUser - 2016.11.04 at 21h 34m 37s.xml">
-      <configuration name="UserDBUnitTestCase.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testPageAvailability - 2017.04.01 at 22h 13m 29s.xml">
+      <configuration name="MainPageTest.testPageAvailability" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testUpdateUser - 2016.11.04 at 21h 35m 49s.xml">
-      <configuration name="UserDBUnitTestCase.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testPageAvailability - 2017.04.01 at 22h 14m 33s.xml">
+      <configuration name="MainPageTest.testPageAvailability" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBUnitTestCase_testUpdateUser - 2016.11.08 at 21h 27m 27s.xml">
-      <configuration name="UserDBUnitTestCase.testUpdateUser" configurationId="JUnit" />
+    <history-entry file="MainPageTest_testPageAvailability - 2017.04.01 at 22h 16m 34s.xml">
+      <configuration name="MainPageTest.testPageAvailability" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserDBUnitTestCase_testUpdateUser - 2016.11.08 at 21h 30m 07s.xml">
       <configuration name="UserDBUnitTestCase.testUpdateUser" configurationId="JUnit" />
@@ -1553,7 +1446,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454201000" />
+    <option name="totallyTimeSpent" value="463538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1566,7 +1459,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47104678" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
@@ -1584,11 +1477,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22383073" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39420936" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23804227" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33742005" sideWeight="0.49554566" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33742005" sideWeight="0.49554566" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1656,34 +1549,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/promin_ism/model/ProductionMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33951497">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newPartAddProductionMethod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29101285">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/js/newPart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5392297">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/impl/PartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8487874">
-          <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/promin_ism/service/PartService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26676178">
@@ -1702,7 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46077034">
           <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1710,9 +1574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46647647">
           <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1790,7 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2852349">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,9 +1658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1829,7 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1367816">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1886,34 +1742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding>
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1413#1414#0" expanded="false" />
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1519#1520#0" expanded="false" />
-            <element signature="e#1555#1556#0" expanded="false" />
-            <element signature="e#1586#1587#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1653#1654#0" expanded="false" />
-            <element signature="e#1685#1686#0" expanded="false" />
-            <element signature="e#1718#1719#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1866#1867#0" expanded="false" />
-            <element signature="e#1893#1894#0" expanded="false" />
-            <element signature="e#1933#1934#0" expanded="false" />
-            <element signature="e#1965#1966#0" expanded="false" />
-            <element signature="e#2000#2001#0" expanded="false" />
-            <element signature="e#2031#2032#0" expanded="false" />
-            <element signature="e#2079#2080#0" expanded="false" />
-            <element signature="e#2119#2120#0" expanded="false" />
-            <element signature="e#2156#2157#0" expanded="false" />
-            <element signature="e#2189#2190#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-            <element signature="e#2285#2286#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1921,7 +1749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="47" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1943,7 +1770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25373134">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1951,13 +1777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46896553">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1965,7 +1784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35172415">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1987,7 +1805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21494253">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1995,9 +1812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35575485">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2005,7 +1819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24142012">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2013,7 +1826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0059172">
           <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2021,7 +1833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.9425948">
           <caret line="213" column="110" selection-start-line="213" selection-start-column="110" selection-end-line="213" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2029,9 +1840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5464983">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2039,7 +1847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.0177515">
           <caret line="150" column="87" selection-start-line="150" selection-start-column="87" selection-end-line="150" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2047,31 +1854,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05287714">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="47.076923">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6923077">
-          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/view.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4012442">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        <state vertical-scroll-proportion="1.0164424">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025411062">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/pages/parts/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.992891">
+          <caret line="102" column="16" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/promin_ism/controller/ViewAllAssembliesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41379312">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03469388">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/test/com/ism_promin/controller/MainPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75775194">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2140,11 +1977,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|controller</last-edited>
+          <last-edited>controller</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.443038" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

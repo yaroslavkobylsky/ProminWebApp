@@ -458,6 +458,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/controller/src/test/com/ism_promin/controller/MainPageTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/dao/pom.xml">
           <value>
             <set />
