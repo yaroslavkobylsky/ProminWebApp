@@ -38,6 +38,9 @@ public class Part {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<ProductionMethod> productionMethods;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Drawing> drawings;
+
     @ManyToOne
     private User user;
 
