@@ -4,24 +4,16 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "Drawing")
+@Table(name = "drawing")
 public class Drawing {
     @Id
     @SequenceGenerator(name = "sequence", sequenceName = "SEQ_Drawing_ID", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")
     private Long id;
 
-    @Column(name = "image", columnDefinition = "BLOB")
+    @Column(name = "image")
+    @Lob
     private byte[] image;
-
-    @ManyToOne
-    private Part part;
-
-    @ManyToOne
-    private Assembly assembly;
-
-    @ManyToOne
-    private User user;
 
     @Column(name = "lastDate")
     private LocalDateTime lastDate;
@@ -46,30 +38,6 @@ public class Drawing {
 
     public void setImage(byte[] image) {
         this.image = image;
-    }
-
-    public Part getPart() {
-        return part;
-    }
-
-    public void setPart(Part part) {
-        this.part = part;
-    }
-
-    public Assembly getAssembly() {
-        return assembly;
-    }
-
-    public void setAssembly(Assembly assembly) {
-        this.assembly = assembly;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public LocalDateTime getLastDate() {

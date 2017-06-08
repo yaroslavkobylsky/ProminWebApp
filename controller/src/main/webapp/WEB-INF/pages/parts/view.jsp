@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <div class="row">
     <div class="col-sm-8"></div>
@@ -57,6 +59,34 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Add drawing</div>
+            <div class="panel-body">
+                <form:form method="POST"
+                       action="${pageContext.request.contextPath}/parts/addDrawing/${part.id}"
+                       modelAttribute="uploadForm"
+                       enctype="multipart/form-data">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="file" accept="image/jpeg" id="files" name="files">
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <input class="button-primary" type="submit" value="Add">
+                        </div>
+                    </div>
+
+                </form:form>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
