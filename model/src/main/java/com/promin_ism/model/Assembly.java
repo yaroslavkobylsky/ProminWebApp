@@ -12,6 +12,7 @@ import com.promin_ism.model.Comparators.StandardPartLongEntryComparator;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "assembly")
@@ -68,40 +69,37 @@ public class Assembly {
 
     public Map<Part, Long> getListOfPurchasedParts(){
         Map<Part, Long> listOfPurchasedParts = new HashMap<>();
-
-        List<Map.Entry<Assembly, Long>> listOfAssemblies = new ArrayList<>(assemblies.entrySet());
-        for (Map.Entry<Assembly, Long> assembly : listOfAssemblies){
-            Map<Part, Long> list = assembly.getKey().getListOfPurchasedParts();
-            List<Map.Entry<Part, Long>> partLongList = new ArrayList<>(list.entrySet());
-            for (Map.Entry<Part, Long> part : partLongList){
-                Long quantity = part.getValue() * assembly.getValue();
-                if (listOfPurchasedParts.containsKey(part.getKey())){
-                    quantity = quantity + listOfPurchasedParts.get(part.getKey());
-                    listOfPurchasedParts.remove(part.getKey());
-                    listOfPurchasedParts.put(part.getKey(), quantity);
-                }
-                else {
-                    listOfPurchasedParts.put(part.getKey(), quantity);
-                }
+        if (assemblies != null){
+            List<Map.Entry<Assembly, Long>> listOfAssemblies = new ArrayList<>(assemblies.entrySet());
+            for (Map.Entry<Assembly, Long> assembly : listOfAssemblies){
+                Map<Part, Long> list = assembly.getKey().getListOfPurchasedParts();
+                listOfPurchasedParts = addPartLongMaps(listOfPurchasedParts, list, assembly.getValue());
             }
         }
 
-        List<Map.Entry<Part, Long>> partsList = new ArrayList<>(parts.entrySet());
-
-        for (Map.Entry<Part, Long> part : partsList){
-            if(part.getKey().getIsPurchased() != null && part.getKey().getIsPurchased()){
-                Long quantity = part.getValue();
-                if (listOfPurchasedParts.containsKey(part.getKey())){
-                    quantity = quantity + listOfPurchasedParts.get(part.getKey());
-                    listOfPurchasedParts.remove(part.getKey());
-                    listOfPurchasedParts.put(part.getKey(), quantity);
-                }
-                else {
-                    listOfPurchasedParts.put(part.getKey(), quantity);
-                }
-            }
+        if (parts != null){
+            Map<Part, Long> purchasedPartsFromPartsMap = parts.entrySet().stream()
+                    .filter(partLongEntry -> partLongEntry.getKey().getIsPurchased() !=null && partLongEntry.getKey().getIsPurchased() == true)
+                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+            listOfPurchasedParts = addPartLongMaps(listOfPurchasedParts, purchasedPartsFromPartsMap, new Long(1));
         }
         return listOfPurchasedParts;
+    }
+
+    private Map<Part, Long> addPartLongMaps(Map<Part, Long> baseMap, Map<Part, Long> addedMap, Long multiplier){
+        Map<Part, Long> result = new HashMap<>(baseMap);
+        for (Map.Entry<Part, Long> partLongEntry : addedMap.entrySet()){
+            Long quantity =  partLongEntry.getValue()*multiplier;
+            if (result.containsKey(partLongEntry.getKey())){
+                quantity = quantity + result.get(partLongEntry.getKey());
+                result.remove(partLongEntry.getKey());
+                result.put(partLongEntry.getKey(), quantity);
+            }
+            else {
+                result.put(partLongEntry.getKey(), quantity);
+            }
+        }
+        return result;
     }
 
     public CadSpecification getCadSpecification(){
