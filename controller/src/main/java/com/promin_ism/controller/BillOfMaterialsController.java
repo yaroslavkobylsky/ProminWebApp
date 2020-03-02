@@ -13,6 +13,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class BillOfMaterialsController {
+    private static final String  GET_BILL_OF_MATERIALS = "getBillOfMaterials";
+    private static final String  BILL_OF_MATERIALS = "billOfMaterials";
+
     private static final Logger LOGGER = Logger.getLogger(BillOfMaterialsController.class);
 
     @Autowired
@@ -20,13 +23,13 @@ public class BillOfMaterialsController {
 
     @RequestMapping(value = "/assemblies/getBillOfMaterials", method = RequestMethod.GET)
     public ModelAndView getBillOfMaterials(Long id){
-        ModelAndView modelAndView = new ModelAndView("getBillOfMaterials");
+        ModelAndView modelAndView = new ModelAndView(GET_BILL_OF_MATERIALS);
         try {
             BillOfMaterials billOfMaterials = new BillOfMaterials();
             Assembly assembly = assemblyService.read(id);
             billOfMaterials.setAssembly(assembly);
             billOfMaterials.setBill(assembly.getBillOfMaterials());
-            modelAndView.addObject("billOfMaterials", billOfMaterials);
+            modelAndView.addObject(BILL_OF_MATERIALS, billOfMaterials);
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
