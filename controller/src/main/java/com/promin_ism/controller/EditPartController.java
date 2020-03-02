@@ -7,7 +7,6 @@ import com.promin_ism.model.User;
 import com.promin_ism.service.MaterialService;
 import com.promin_ism.service.PartService;
 import com.promin_ism.service.ProductionMethodService;
-import com.promin_ism.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,7 +37,7 @@ public class EditPartController {
     private MaterialService materialService;
 
     @RequestMapping(value = "/parts/edit", method = RequestMethod.GET)
-    public ModelAndView viewPart(Long id){
+    public ModelAndView viewPart(Long id) {
         Part part = null;
         try {
             part = partService.read(id);
@@ -50,13 +49,12 @@ public class EditPartController {
 
     @RequestMapping(value = "/isPartNameUniqueInEdit", method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Boolean> isPartNameUniqueInEdit(String name, Long id){
-        LOGGER.debug("is part name unique in edit: " + name);
+    public Map<String, Boolean> isPartNameUniqueInEdit(String name, Long id) {
         try {
-            return Collections.singletonMap("result", new Boolean(partService.isNameUniqueInEdit(name, id)));
+            return Collections.singletonMap("result", partService.isNameUniqueInEdit(name, id));
         } catch (DatabaseException e) {
             e.printStackTrace();
-            return Collections.singletonMap("result", new Boolean(false));
+            return Collections.singletonMap("result", false);
         }
     }
 
@@ -68,23 +66,22 @@ public class EditPartController {
                            Boolean isPurchased,
                            Long material,
                            WebRequest request,
-                           HttpSession httpSession){
+                           HttpSession httpSession) {
         try {
             Part part = partService.read(id);
             part.setName(partName.trim());
             part.setDescName(partDescName.trim());
             part.setMaterialNormWeight(partMaterialNormWeight);
             part.setIsPurchased(isPurchased);
-            if (material != null){
+            if (material != null) {
                 part.setMaterial(materialService.read(material));
             }
 
             Map<String, String[]> requestParameters = request.getParameterMap();
             ArrayList<ProductionMethod> productionMethods = new ArrayList<ProductionMethod>();
-            for (Map.Entry<String, String[]> entry : requestParameters.entrySet()){
-                if (entry.getKey().contains(NewPartController.METHOD)){
+            for (Map.Entry<String, String[]> entry : requestParameters.entrySet()) {
+                if (entry.getKey().contains(NewPartController.METHOD)) {
                     Long productionMethodId = Long.parseLong(entry.getValue()[0]);
-                    LOGGER.debug("production method id: " + productionMethodId);
                     productionMethods.add(productionMethodService.read(productionMethodId));
                 }
             }
@@ -92,7 +89,6 @@ public class EditPartController {
             part.setUser((User) httpSession.getAttribute("user"));
             part.setLastDate(new Date());
             partService.update(part);
-            LOGGER.debug("part: " + part.toString());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
