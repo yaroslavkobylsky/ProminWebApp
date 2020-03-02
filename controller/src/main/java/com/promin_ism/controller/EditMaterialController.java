@@ -30,12 +30,10 @@ public class EditMaterialController {
     UserService userService;
 
     @RequestMapping(value = "materials/edit", method = RequestMethod.GET)
-    public ModelAndView getMaterial(Long id){
+    public ModelAndView getMaterial(Long id) {
         Material material = null;
         try {
             material = materialService.read(id);
-            LOGGER.debug("id: " + id);
-            LOGGER.debug("material: " + material.toString());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
@@ -44,23 +42,20 @@ public class EditMaterialController {
 
     @RequestMapping(value = "materials/edit", method = RequestMethod.POST)
     public String saveMaterial(Long id,
-                                     String materialName,
-                                     String materialDimensions,
-                                     String materialGOST,
-                                     String materialSort,
-                                     Integer materialType,
-                                     HttpSession httpSession){
-        LOGGER.debug("edit material post method");
-        Material material = null;
+                               String materialName,
+                               String materialDimensions,
+                               String materialGOST,
+                               String materialSort,
+                               Integer materialType,
+                               HttpSession httpSession) {
         try {
-            material = materialService.read(id);
-            LOGGER.debug("material name: " + materialName);
+            Material material = materialService.read(id);
             material.setName(materialName.trim());
             material.setDimensions(materialDimensions.trim());
             material.setGost(materialGOST.trim());
             material.setSort(materialSort.trim());
             material.setDate(new Date());
-            if (materialType != null && !materialType.equals(new Integer(-1))){
+            if (materialType != null && !materialType.equals(-1)) {
                 material.setMaterilalType(materialTypeService.read(new Long(materialType)));
             }
             material.setUser((User) httpSession.getAttribute("user"));
@@ -68,7 +63,6 @@ public class EditMaterialController {
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        LOGGER.debug(material.toString());
         return "redirect:viewAll";
     }
 }
