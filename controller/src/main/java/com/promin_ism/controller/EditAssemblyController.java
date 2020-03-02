@@ -36,69 +36,50 @@ public class EditAssemblyController {
     @Autowired
     private MaterialService materialService;
 
-
-
     @RequestMapping(value = "/assemblies/edit", method = RequestMethod.GET)
-    public ModelAndView loadAssembly(Long id){
-        Assembly assembly = null;
-        List<Part> parts = new ArrayList();
-        List<StandardPart> standardParts = new ArrayList();
-        List<Material> materials = new ArrayList();
-        List<Assembly> assemblies = new ArrayList();
+    public ModelAndView loadAssembly(Long id) {
+        ModelAndView modelAndView = new ModelAndView();
         try {
-            assembly = assemblyService.read(id);
-            parts = partService.findAll();
-            standardParts = standardPartService.findAll();
-            materials = materialService.findAll();
-            assemblies = assemblyService.findAll();
-//            assemblies.stream().forEach(o->LOGGER.debug("assembly: " + o.toString()));
-            for (Assembly assembly1: assemblies) {
-                LOGGER.debug("assembly: " + assembly1.toString());
-            }
+            modelAndView.addObject("assemblyEdit", assemblyService.read(id))
+                    .addObject("parts", partService.findAll())
+                    .addObject("standardParts", standardPartService.findAll())
+                    .addObject("materials", materialService.findAll())
+                    .addObject("assemblies", assemblyService.findAll());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        ModelAndView modelAndView = new ModelAndView("assemblyEdit", "assembly", assembly);
-        modelAndView.addObject("parts", parts);
-        modelAndView.addObject("standardParts", standardParts);
-        modelAndView.addObject("materials", materials);
-        modelAndView.addObject("assemblies", assemblies);
         return modelAndView;
     }
 
     @RequestMapping(value = "/assemblies/edit/saveFields", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> saveFields(String name, String descName, String additional, Long id){
-        LOGGER.debug("save fields method started");
-        LOGGER.debug("name: " + name + " , desc name: " + descName + " , additional: " + additional + " , assembly id: " + id);
-        Map<String, Long> resultMap = new HashMap();
-
+    public Map<String, Long> saveFields(String name, String descName, String additional, Long id) {
+        Long operationResult;
         try {
-            boolean result = assemblyService.isNameUniqueOnEdit(name, id);
-            if(result){
+            if (assemblyService.isNameUniqueOnEdit(name, id)) {
                 Assembly assembly = assemblyService.read(id);
                 assembly.setName(name);
                 assembly.setDescName(descName);
                 assembly.setAdditionalInfo(additional);
                 assembly.setLastDate(new Date());
                 assemblyService.update(assembly);
-                resultMap.put("result", new Long(1));
-                return resultMap;
-            }
-            else {
-                resultMap.put("result", new Long(-1));
-                return resultMap;
+                operationResult = 1L;
+            } else {
+                operationResult = -1L;
             }
         } catch (DatabaseException e) {
             LOGGER.error(e);
-            resultMap.put("result", new Long(0));
-            return resultMap;
+            operationResult = 0L;
         }
+
+        HashMap<String, Long> result = new HashMap<String, Long>();
+        result.put("result", operationResult);
+        return result;
     }
 
     @RequestMapping(value = "/assemblies/edit/removePart", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> removePart(Long partId, Long assemblyId){
+    public Map<String, Long> removePart(Long partId, Long assemblyId) {
         LOGGER.debug("remove part from assembly method");
         LOGGER.debug("part id: " + partId + " , assembly id: " + assemblyId);
         Map<String, Long> resultMap = new HashMap();
@@ -106,12 +87,11 @@ public class EditAssemblyController {
             Assembly assembly = assemblyService.read(assemblyId);
             Part part = partService.read(partId);
             Long quantity = assembly.getParts().remove(part);
-            if (quantity != null){
+            if (quantity != null) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -124,20 +104,18 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/addPart", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> addPart(Long partId, Long assemblyId, Long quantity){
+    public Map<String, Long> addPart(Long partId, Long assemblyId, Long quantity) {
         LOGGER.debug("add part to assembly method");
         LOGGER.debug("part id: " + partId + ", assembly id: " + assemblyId + ", quantity: " + quantity);
         Map<String, Long> resultMap = new HashMap();
         try {
             Assembly assembly = assemblyService.read(assemblyId);
             Part part = partService.read(partId);
-            if (assembly.addPart(part, quantity))
-            {
+            if (assembly.addPart(part, quantity)) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -150,20 +128,18 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/addStandardPart", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> addStandardPart(Long standardPartId, Long assemblyId, Long quantity){
+    public Map<String, Long> addStandardPart(Long standardPartId, Long assemblyId, Long quantity) {
         LOGGER.debug("add stabdard part to assembly method");
         LOGGER.debug("standard part id: " + standardPartId + ", assembly id: " + assemblyId + ", quantity: " + quantity);
         Map<String, Long> resultMap = new HashMap();
         try {
             Assembly assembly = assemblyService.read(assemblyId);
             StandardPart standardPart = standardPartService.read(standardPartId);
-            if (assembly.addStandartPart(standardPart, quantity))
-            {
+            if (assembly.addStandartPart(standardPart, quantity)) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -176,7 +152,7 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/removeStandardPart", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> removeStandardPart(Long standardPartId, Long assemblyId){
+    public Map<String, Long> removeStandardPart(Long standardPartId, Long assemblyId) {
         LOGGER.debug("remove standard part from assembly method");
         LOGGER.debug("standard part id: " + standardPartId + " , assembly id: " + assemblyId);
         Map<String, Long> resultMap = new HashMap();
@@ -184,12 +160,11 @@ public class EditAssemblyController {
             Assembly assembly = assemblyService.read(assemblyId);
             StandardPart standardPart = standardPartService.read(standardPartId);
             Long quantity = assembly.getStandardParts().remove(standardPart);
-            if (quantity != null){
+            if (quantity != null) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -202,21 +177,19 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/addMaterial", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> addMaterial(Long materialId, Long assemblyId, BigDecimal quantity){
+    public Map<String, Long> addMaterial(Long materialId, Long assemblyId, BigDecimal quantity) {
         LOGGER.debug("add material to assembly method");
         LOGGER.debug("material id: " + materialId + ", assembly id: " + assemblyId + ", quantity: " + quantity);
         Map<String, Long> resultMap = new HashMap();
         try {
             Assembly assembly = assemblyService.read(assemblyId);
             Material material = materialService.read(materialId);
-            if (assembly.addMaterials(material, quantity))
-            {
+            if (assembly.addMaterials(material, quantity)) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 LOGGER.debug("material was added to assembly");
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 LOGGER.debug("material was not added to assembly");
                 return resultMap;
@@ -230,7 +203,7 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/removeMaterial", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> removeMaterial(Long materialId, Long assemblyId){
+    public Map<String, Long> removeMaterial(Long materialId, Long assemblyId) {
         LOGGER.debug("remove material from assembly method");
         LOGGER.debug("material id: " + materialId + " , assembly id: " + assemblyId);
         Map<String, Long> resultMap = new HashMap();
@@ -238,12 +211,11 @@ public class EditAssemblyController {
             Assembly assembly = assemblyService.read(assemblyId);
             Material material = materialService.read(materialId);
             BigDecimal quantity = assembly.getMaterials().remove(material);
-            if (quantity != null){
+            if (quantity != null) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -256,20 +228,18 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/addAssembly", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> addAssembly(Long addAssemblyId, Long assemblyId, Long quantity){
+    public Map<String, Long> addAssembly(Long addAssemblyId, Long assemblyId, Long quantity) {
         LOGGER.debug("add assembly to assembly method");
         LOGGER.debug("adding assembly id: " + addAssemblyId + ", assembly id: " + assemblyId + ", quantity: " + quantity);
         Map<String, Long> resultMap = new HashMap();
         try {
             Assembly assembly = assemblyService.read(assemblyId);
             Assembly addingAssembly = assemblyService.read(addAssemblyId);
-            if (assembly.addAssembly(addingAssembly, quantity))
-            {
+            if (assembly.addAssembly(addingAssembly, quantity)) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
@@ -282,7 +252,7 @@ public class EditAssemblyController {
 
     @RequestMapping(value = "/assemblies/edit/removeAssembly", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Long> removeAssembly(Long removeAssemblyId, Long assemblyId){
+    public Map<String, Long> removeAssembly(Long removeAssemblyId, Long assemblyId) {
         LOGGER.debug("remove assembly from assembly method");
         LOGGER.debug("remove assembly id: " + removeAssemblyId + " , assembly id: " + assemblyId);
         Map<String, Long> resultMap = new HashMap();
@@ -294,12 +264,11 @@ public class EditAssemblyController {
             LOGGER.debug("removed assembly: " + removingAssembly.toString());
             Long quantity = assembly.getAssemblies().remove(removingAssembly);
             LOGGER.debug("quantity: " + quantity);
-            if (quantity != null){
+            if (quantity != null) {
                 assemblyService.update(assembly);
                 resultMap.put("result", new Long(1));
                 return resultMap;
-            }
-            else {
+            } else {
                 resultMap.put("result", new Long(-1));
                 return resultMap;
             }
