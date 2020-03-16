@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewAssemblyController {
     private static final Logger LOGGER = Logger.getLogger(ViewAssemblyController.class);
 
+    private static final String ASSEMBLY_VIEW_NAME = "assemblyView";
+    private static final String ASSEMBLY_MODEL_NAME = "assembly";
+
     @Autowired
     private AssemblyService assemblyService;
 
@@ -25,6 +28,6 @@ public class ViewAssemblyController {
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("assemblyView", "assembly", assembly);
+        return new ModelAndView(ASSEMBLY_VIEW_NAME, ASSEMBLY_MODEL_NAME, assembly);
     }
 }

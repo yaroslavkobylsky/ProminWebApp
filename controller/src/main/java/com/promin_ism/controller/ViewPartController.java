@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewPartController {
     private static final Logger LOGGER = Logger.getLogger(ViewPartController.class);
 
+    private static final String PARTS_VIEW_NAME = "partsView";
+    private static final String PART_MODEL_NAME = "part";
+
     @Autowired
     private PartService partService;
 
@@ -25,6 +28,6 @@ public class ViewPartController {
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("partsView", "part", part);
+        return new ModelAndView(PARTS_VIEW_NAME, PART_MODEL_NAME, part);
     }
 }

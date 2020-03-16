@@ -17,6 +17,9 @@ import java.util.List;
 public class ViewAllStandardPartsController {
     private static final Logger LOGGER = Logger.getLogger(ViewAllStandardPartsController.class);
 
+    private static final String STANDARD_PARTS_VIEW_ALL_NAME = "standardPartsViewAll";
+    private static final String STANDARD_PARTS_MODEL_NAME = "standardParts";
+
     @Autowired
     StandardPartService standardPartService;
 
@@ -28,6 +31,6 @@ public class ViewAllStandardPartsController {
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("standardPartsViewAll", "standardParts", standardParts);
+        return new ModelAndView(STANDARD_PARTS_VIEW_ALL_NAME, STANDARD_PARTS_MODEL_NAME, standardParts);
     }
 }

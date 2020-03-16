@@ -1,7 +1,6 @@
 package com.promin_ism.controller;
 
 import com.promin_ism.dao.DatabaseException;
-import com.promin_ism.dao.UserDao;
 import com.promin_ism.model.User;
 import com.promin_ism.service.UserService;
 import org.apache.log4j.Logger;

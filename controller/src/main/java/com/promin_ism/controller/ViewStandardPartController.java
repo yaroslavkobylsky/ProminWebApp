@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewStandardPartController {
     private static final Logger LOGGER = Logger.getLogger(ViewStandardPartController.class);
 
+    private static final String STANDARD_PARTS_VIEW = "standardPartsView";
+    private static final String STANDARD_PART_MODEL_NAME = "standardPart";
+
     @Autowired
     private StandardPartService standardPartService;
 
@@ -22,11 +25,9 @@ public class ViewStandardPartController {
         StandardPart standardPart = null;
         try {
             standardPart = standardPartService.read(id);
-            LOGGER.debug("id: " + id);
-            LOGGER.debug("standard part: " + standardPart.toString());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("standardPartsView", "standardPart", standardPart);
+        return new ModelAndView(STANDARD_PARTS_VIEW, STANDARD_PART_MODEL_NAME, standardPart);
     }
 }

@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewMaterialController {
     private static final Logger LOGGER = Logger.getLogger(ViewMaterialController.class);
 
+    private static final String MATERIAL_VIEW_NAME = "materialView";
+    private static final String MATERIAL_MODEL_NAME = "material";
+
     @Autowired
     private MaterialService materialService;
 
@@ -22,11 +25,9 @@ public class ViewMaterialController {
         Material material = null;
         try {
             material = materialService.read(id);
-            LOGGER.debug("id: " + id);
-            LOGGER.debug("material: " + material.toString());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("materialView", "material", material);
+        return new ModelAndView(MATERIAL_VIEW_NAME, MATERIAL_MODEL_NAME, material);
     }
 }
