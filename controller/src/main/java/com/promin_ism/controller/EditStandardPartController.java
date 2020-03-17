@@ -26,7 +26,7 @@ public class EditStandardPartController {
     private StandardPartService standardPartService;
 
     @RequestMapping(value = "/standardParts/edit", method = RequestMethod.GET)
-    public ModelAndView editStandardPart(Long id){
+    public ModelAndView editStandardPart(Long id) {
         StandardPart standardPart = null;
         try {
             standardPart = standardPartService.read(id);
@@ -44,7 +44,7 @@ public class EditStandardPartController {
                                    String gost,
                                    BigDecimal weight,
                                    String additionalInfo,
-                                   HttpSession httpSession){
+                                   HttpSession httpSession) {
         try {
             StandardPart standardPart = standardPartService.read(id);
             standardPart.setName(standardPartName.trim());
@@ -62,7 +62,7 @@ public class EditStandardPartController {
 
     @RequestMapping(value = "/isStandardPartNameUniqueInEdit", method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Boolean> isStandardPartNameUnique(String name, Long id){
+    public Map<String, Boolean> isStandardPartNameUnique(String name, Long id) {
         LOGGER.debug("is part name unique in edit: " + name + ", id: " + id);
         try {
             return Collections.singletonMap("result", new Boolean(standardPartService.isNameUniqueWhileEdit(name, id)));

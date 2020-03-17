@@ -15,39 +15,42 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class LoginController {
     private static final Logger LOGGER = Logger.getLogger(LoginController.class);
-    private static final String WRONG_MESSAGE = "wrong login or password!";
+    private static final String WRONG_LOGIN_OR_PASSWORD_MESSAGE = "wrong login or password!";
+    private static final String LOGIN = "login";
+    private static final String MESSAGE = "message";
+    private static final String USER = "user";
+    private static final String HOME = "home";
 
     @Autowired
     private UserService userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView login(){
+    public ModelAndView login() {
         String message = "";
-        return new ModelAndView("login","message", message);
+        return new ModelAndView(LOGIN, MESSAGE, message);
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public ModelAndView doLogin(String userName, String userPassword, HttpSession httpSession){
+    public ModelAndView doLogin(String userName, String userPassword, HttpSession httpSession) {
         try {
             User user = userService.getByLoginPass(userName, userPassword);
-            if (user == null){
-                return new ModelAndView("login","message", WRONG_MESSAGE);
-            }
-            else{
-                httpSession.setAttribute("user", user);
-                return new ModelAndView("home");
+            if (user == null) {
+                return new ModelAndView(LOGIN, MESSAGE, WRONG_LOGIN_OR_PASSWORD_MESSAGE);
+            } else {
+                httpSession.setAttribute(USER, user);
+                return new ModelAndView(HOME);
             }
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
-        return new ModelAndView("login");
+        return new ModelAndView(LOGIN);
     }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
-    public ModelAndView logout( HttpSession httpSession){
-        httpSession.setAttribute("user", null);
+    public ModelAndView logout(HttpSession httpSession) {
+        httpSession.setAttribute(USER, null);
         String message = "";
-        return new ModelAndView("login","message", message);
+        return new ModelAndView(LOGIN, MESSAGE, message);
     }
 
 

@@ -21,7 +21,7 @@ public class ViewAllMaterialsController {
     private MaterialService materialService;
 
     @RequestMapping(value = "/materials/viewAll", method = RequestMethod.GET)
-    public ModelAndView viewAllMaterials (){
+    public ModelAndView viewAllMaterials() {
         List<Material> materials = Collections.EMPTY_LIST;
         try {
             materials = materialService.findAll();

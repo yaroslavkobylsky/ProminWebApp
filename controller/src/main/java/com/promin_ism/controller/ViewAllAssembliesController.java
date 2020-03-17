@@ -24,7 +24,7 @@ public class ViewAllAssembliesController {
     private AssemblyService assemblyService;
 
     @RequestMapping(value = "/assemblies/viewAll", method = RequestMethod.GET)
-    public ModelAndView viewAllAssemblies(){
+    public ModelAndView viewAllAssemblies() {
         List<Assembly> assemblies = Collections.emptyList();
         try {
             assemblies = assemblyService.findAll();
@@ -36,7 +36,7 @@ public class ViewAllAssembliesController {
 
     @RequestMapping(value = "/createNewAssembly", method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Long> createNewAssembly(String name){
+    public Map<String, Long> createNewAssembly(String name) {
         Assembly assembly = new Assembly();
         assembly.setName(name.trim());
         try {
@@ -50,8 +50,7 @@ public class ViewAllAssembliesController {
 
     @RequestMapping(value = "/isAssemblyNameUnique", method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Boolean> isAssemblyNameUnique(String name){
-        LOGGER.debug("checking is assembly name unique: " + name);
+    public Map<String, Boolean> isAssemblyNameUnique(String name) {
         Map<String, Boolean> result = new HashMap<String, Boolean>();
         try {
             result.put("result", assemblyService.isNameUnique(name));

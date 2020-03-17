@@ -26,16 +26,16 @@ public class NewStandardPartController {
     private StandardPartService standardPartService;
 
     @RequestMapping(value = "/standardParts/new", method = RequestMethod.GET)
-    public ModelAndView newStandardPart(){
+    public ModelAndView newStandardPart() {
         return new ModelAndView("standardPartsNew");
     }
 
     @RequestMapping(value = "/standardParts/new", method = RequestMethod.POST)
     public String saveStandardPart(String standardPartName,
-                                         String gost,
-                                         BigDecimal weight,
-                                         String additionalInfo,
-                                         HttpSession httpSession) {
+                                   String gost,
+                                   BigDecimal weight,
+                                   String additionalInfo,
+                                   HttpSession httpSession) {
         StandardPart standardPart = new StandardPart();
         standardPart.setName(standardPartName.trim());
         standardPart.setGost(gost.trim());
@@ -45,7 +45,6 @@ public class NewStandardPartController {
         standardPart.setUser((User) httpSession.getAttribute("user"));
         try {
             Long id = standardPartService.create(standardPart);
-            LOGGER.debug("standard part was saved with id: " + id);
         } catch (DatabaseException e) {
             LOGGER.error(standardPart);
         }
@@ -55,13 +54,12 @@ public class NewStandardPartController {
 
     @RequestMapping(value = "/isStandardPartNameUnique", method = RequestMethod.GET)
     @ResponseBody
-    public Map<String, Boolean> isStandardPartNameUnique(String name){
-        LOGGER.debug("is part name unique: " + name);
+    public Map<String, Boolean> isStandardPartNameUnique(String name) {
         try {
-            return Collections.singletonMap("result", new Boolean(standardPartService.isNameUnique(name)));
+            return Collections.singletonMap("result", standardPartService.isNameUnique(name));
         } catch (DatabaseException e) {
             e.printStackTrace();
-            return Collections.singletonMap("result", new Boolean(false));
+            return Collections.singletonMap("result", false);
         }
     }
 }

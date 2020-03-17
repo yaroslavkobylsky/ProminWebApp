@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
 import java.util.*;
@@ -39,8 +37,7 @@ public class NewPartController {
 
     @RequestMapping(value = "/parts/new", method = RequestMethod.GET)
     public ModelAndView newPart(){
-        String message = "HELLO!!!";
-        return new ModelAndView("partsNew", "message", message);
+        return new ModelAndView("partsNew", "message", "");
     }
 
     @RequestMapping(value = "/parts/new", method = RequestMethod.POST)
@@ -66,7 +63,6 @@ public class NewPartController {
             for (Map.Entry<String, String[]> entry : requestParameters.entrySet()){
                 if (entry.getKey().contains(METHOD)){
                     Long productionMethodId = Long.parseLong(entry.getValue()[0]);
-                    LOGGER.debug("production method id: " + productionMethodId);
                     productionMethods.add(productionMethodService.read(productionMethodId));
                 }
             }
@@ -74,8 +70,6 @@ public class NewPartController {
             part.setUser((User) httpSession.getAttribute("user"));
             part.setLastDate(new Date());
             Long newId = partService.create(part);
-            LOGGER.debug("new part id: " + newId);
-            LOGGER.debug("part: " + part.toString());
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
@@ -107,10 +101,10 @@ public class NewPartController {
     @RequestMapping(value = "/isPartNameUnique", method = RequestMethod.GET)
     @ResponseBody
     public Map<String, Boolean> isPartNameUnique(String name){
-        LOGGER.debug("is part name unique: " + name);
         try {
             return Collections.singletonMap("result", new Boolean(partService.isNameUnique(name)));
         } catch (DatabaseException e) {
+            LOGGER.error(e);
             e.printStackTrace();
             return Collections.singletonMap("result", new Boolean(false));
         }

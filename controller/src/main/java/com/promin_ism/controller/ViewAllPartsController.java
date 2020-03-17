@@ -22,7 +22,6 @@ public class ViewAllPartsController {
 
     @RequestMapping(value = "/parts/viewAll", method = RequestMethod.GET)
     public ModelAndView newPart(){
-        LOGGER.debug("view all parts method started!");
         List<Part> parts = Collections.emptyList();
         try {
             parts = partService.findAll();

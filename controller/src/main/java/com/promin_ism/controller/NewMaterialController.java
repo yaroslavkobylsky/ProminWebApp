@@ -9,7 +9,6 @@ import com.promin_ism.service.MaterialTypeService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -32,7 +31,7 @@ public class NewMaterialController {
 
 
     @RequestMapping(value = "/materials/new", method = RequestMethod.GET)
-    public ModelAndView newMaterial(){
+    public ModelAndView newMaterial() {
         return new ModelAndView("materialNew");
     }
 
@@ -43,22 +42,19 @@ public class NewMaterialController {
             String materialGOST,
             String materialSort,
             Integer materialType,
-            HttpSession httpSession){
-        LOGGER.debug("new material post method");
+            HttpSession httpSession) {
         Material material = new Material();
-        LOGGER.debug("material name: " + materialName);
         material.setName(materialName.trim());
         material.setDimensions(materialDimensions.trim());
         material.setGost(materialGOST.trim());
         material.setSort(materialSort.trim());
         material.setDate(new Date());
         try {
-            if (materialType != null && !materialType.equals(new Integer(-1))){
+            if (materialType != null && !materialType.equals(new Integer(-1))) {
                 material.setMaterilalType(materialTypeService.read(new Long(materialType)));
             }
             material.setUser((User) httpSession.getAttribute("user"));
             Long id = materialService.create(material);
-            LOGGER.debug("new material created with id: " + id);
         } catch (DatabaseException e) {
             LOGGER.error(e);
         }
@@ -69,7 +65,7 @@ public class NewMaterialController {
 
     @RequestMapping(value = "/getMaterialTypes", method = RequestMethod.GET)
     @ResponseBody
-    public List<MaterialType> getMaterialTypes(){
+    public List<MaterialType> getMaterialTypes() {
         try {
             return materialTypeService.findAll();
         } catch (DatabaseException e) {

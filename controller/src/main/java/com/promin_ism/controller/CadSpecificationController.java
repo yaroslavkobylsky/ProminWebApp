@@ -12,8 +12,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class CadSpecificationController {
-    private static final String GET_CAD_SPECIFICATION =  "getCadSpecification";
-    private static final String CAD_SPECIFICATION =  "cadSpecification";
+    private static final String GET_CAD_SPECIFICATION = "getCadSpecification";
+    private static final String CAD_SPECIFICATION = "cadSpecification";
+    private static final String ERROR_PAGE_VIEW_NAME = "errorPage";
+    private static final String EXCEPTION_MODEL_NAME = "exception";
 
     private static final Logger LOGGER = Logger.getLogger(CadSpecificationController.class);
 
@@ -27,7 +29,7 @@ public class CadSpecificationController {
             return new ModelAndView(GET_CAD_SPECIFICATION, CAD_SPECIFICATION, assembly.getCadSpecification());
         } catch (DatabaseException e) {
             LOGGER.error(e);
-            return new ModelAndView("errorPage", "exception", e);
+            return new ModelAndView(ERROR_PAGE_VIEW_NAME, EXCEPTION_MODEL_NAME, e);
         }
     }
 }

@@ -21,7 +21,7 @@ public class ViewMaterialController {
     private MaterialService materialService;
 
     @RequestMapping(value = "materials/view", method = RequestMethod.GET)
-    public ModelAndView viewMaterial(Long id){
+    public ModelAndView viewMaterial(Long id) {
         Material material = null;
         try {
             material = materialService.read(id);

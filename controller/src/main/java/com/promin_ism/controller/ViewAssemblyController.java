@@ -21,7 +21,7 @@ public class ViewAssemblyController {
     private AssemblyService assemblyService;
 
     @RequestMapping(value = "/assemblies/view", method = RequestMethod.GET)
-    public ModelAndView viewAssembly(Long id){
+    public ModelAndView viewAssembly(Long id) {
         Assembly assembly = null;
         try {
             assembly = assemblyService.read(id);
