@@ -115,7 +115,7 @@
 
     <properties>
         <log4j.version>1.2.17</log4j.version>
-        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
         <hibernate.entity.manager.version>4.3.11.Final</hibernate.entity.manager.version>
         <hibernate-core.version>4.3.11.Final</hibernate-core.version>
     </properties>
